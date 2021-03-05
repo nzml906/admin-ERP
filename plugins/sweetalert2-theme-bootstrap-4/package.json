@@ -2,7 +2,7 @@
   "_args": [
     [
       "@sweetalert2/theme-bootstrap-4@3.1.4",
-      "D:\\vat-ui\\erp-ui\\AdminLTE"
+      "C:\\Users\\Administrator\\Desktop\\vat-ui"
     ]
   ],
   "_from": "@sweetalert2/theme-bootstrap-4@3.1.4",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@sweetalert2/theme-bootstrap-4/-/theme-bootstrap-4-3.1.4.tgz",
   "_spec": "3.1.4",
-  "_where": "D:\\vat-ui\\erp-ui\\AdminLTE",
+  "_where": "C:\\Users\\Administrator\\Desktop\\vat-ui",
   "author": "",
   "bugs": {
     "url": "https://github.com/sweetalert2/sweetalert2-themes/issues"
