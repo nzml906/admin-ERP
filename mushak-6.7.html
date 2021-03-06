@@ -830,11 +830,11 @@
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
-            <!-- Sales order card -->
+            <!-- Customer Wise Sales Return -->
             <div class="card card-warning">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
-                  Sales Order
+                  Customer Wise Sales Return
                 </h3>
 
                 <div class="card-tools">
@@ -857,313 +857,97 @@
 
               <div class="card-body">
                 <div class="row">
-                  <!-- 1st main col -->
-                  <div class="col-md-6">
-                    <div class="row">
-                      <!-- row 01 -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Work Oredr No</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Sales Type</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Currency</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Sales Reference</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Delivery Note</label>
-                          <textarea
-                            class="form-control"
-                            rows="3"
-                            placeholder="Enter ..."
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            Despatch Document No.
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">BIN No.</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Customer</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
                     </div>
                   </div>
-
-                  <!-- 2nd main col -->
-                  <div class="col-md-6">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-2 col-form-label"
-                            >
-                              Code
-                            </label>
-                            <div class="col-sm-10">
-                              <input
-                                type="password"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="Password"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group">
-                            <select
-                              class="form-control select2"
-                              style="width: 100%;"
-                            >
-                              <option selected="selected">
-                                Declaration Search
-                              </option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-4">
-                        <button
-                          type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
-                        >
-                          Load Undelivery
-                        </button>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-10 col-form-label"
-                            >
-                              Delivery Point
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-8">
-                        <form>
-                          <div class="form-group">
-                            <select
-                              class="form-control select2"
-                              style="width: 100%;"
-                            >
-                              <option selected="selected">
-                                Declaration Search
-                              </option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-10 col-form-label"
-                            >
-                              Sales Date
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-8">
-                        <!-- Sales Date -->
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="far fa-calendar-alt"></i>
-                              </span>
-                            </div>
-                            <input
-                              type="text"
-                              class="form-control float-right"
-                              id="received_date"
-                            />
-                          </div>
-                          <!-- /.input group -->
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-10 col-form-label"
-                            >
-                              Delivery Date
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-8">
-                        <!-- Delivery Date -->
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="far fa-calendar-alt"></i>
-                              </span>
-                            </div>
-                            <input
-                              type="text"
-                              class="form-control float-right"
-                              id="delivery_date"
-                            />
-                          </div>
-                          <!-- /.input group -->
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Terms of Payment
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Destination
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>INV No</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Baddebts Goods Godown</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Currency</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Vehicle Type</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Intact Goods Godown</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Sales Details card -->
+            <!-- Return Product Details card -->
             <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title h3">Sales Details</h3>
+                <h3 class="card-title h3">Return Product Details</h3>
 
                 <div class="card-tools">
                   <button
@@ -1187,7 +971,7 @@
                 <div class="row">
                   <div class="col-md-1">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">SL</label>
+                      <label for="exampleInputEmail1">Code</label>
                       <input
                         type="email"
                         class="form-control"
@@ -1196,7 +980,6 @@
                       />
                     </div>
                   </div>
-
                   <div class="col-md-2">
                     <div class="form-group">
                       <label>Product</label>
@@ -1211,10 +994,9 @@
                       </select>
                     </div>
                   </div>
-
                   <div class="col-md-1">
                     <div class="form-group">
-                      <label>Category</label>
+                      <label>UOM</label>
                       <select class="form-control select2" style="width: 100%;">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
@@ -1228,22 +1010,7 @@
                   </div>
                   <div class="col-md-1">
                     <div class="form-group">
-                      <label>Brand</label>
-                      <select class="form-control select2" style="width: 100%;">
-                        <option selected="selected">Alabama</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="col-md-1">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Details</label>
+                      <label for="exampleInputEmail1">Quantity</label>
                       <input
                         type="email"
                         class="form-control"
@@ -1252,31 +1019,6 @@
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Order Quantity</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        placeholder="Enter email"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-md-1">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Free Qty</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        placeholder="Enter email"
-                      />
-                    </div>
-                  </div>
-
                   <div class="col-md-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Rate</label>
@@ -1288,10 +1030,11 @@
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Discount(%)</label>
+                      <label for="exampleInputEmail1">
+                        Total Amount Without VAT
+                      </label>
                       <input
                         type="email"
                         class="form-control"
@@ -1300,7 +1043,74 @@
                       />
                     </div>
                   </div>
-
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">%Sub.Duty</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">SD Amount</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">VAT</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        Total Amount With VAT & SD
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Deduction</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Deduction %</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
                   <div class="col-md-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Amount</label>
@@ -1333,193 +1143,6 @@
                     </button>
                   </div>
                 </div>
-
-                <!-- Expanded menu for mushak 6.3 -->
-                <div class="card card-warning collapsed-card">
-                  <div class="card-header">
-                    <h3 class="card-title h3 font-weight-bold">
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-card-widget="collapse"
-                      >
-                        <i class="fas fa-plus"></i>
-                      </button>
-                      Expanded Menu for mushak 6.3
-                    </h3>
-                  </div>
-
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Code</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="form-group">
-                          <label>Product Name</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">UOM</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label>Balance</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label>Qty</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Sales Rate</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            Total Amount Without VAT
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">%Sub Duty</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            SD Amount
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            VAT
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            Total Amount with VAT & SD
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center">
-                      <div class="col-lg-1">
-                        <button
-                          type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
-                        >
-                          Next
-                        </button>
-                      </div>
-
-                      <div class="col-lg-1">
-                        <button
-                          type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
-                        >
-                          Cancel
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <!-- Product List card -->
@@ -1532,11 +1155,10 @@
                       <th style="width: 10%;">Product Name</th>
                       <th style="width: 10%;">Category</th>
                       <th style="width: 10%;">Brand</th>
-                      <th style="width: 10%;">Oredr Qty</th>
-                      <th style="width: 10%;">Free Qty</th>
+                      <th style="width: 10%;">Baddepts</th>
+                      <th style="width: 10%;">Return Qty</th>
                       <th style="width: 10%;">Rate</th>
-                      <th style="width: 10%;">Discount(%)</th>
-                      <th style="width: 10%;">VAT</th>
+
                       <th style="width: 10%;">Amount</th>
                       <th style="width: 5%;">Action</th>
                       <th style="width: 5%;">Delete</th>
@@ -1544,8 +1166,6 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
@@ -1572,8 +1192,6 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
@@ -1605,6 +1223,39 @@
                 <div class="row mt-3">
                   <div class="col-md-6">
                     <div class="row">
+                      <!-- Return Date -->
+                      <div class="col-md-4">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-10 col-form-label"
+                            >
+                              Return Date
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-7">
+                        <!-- Sales Date -->
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="far fa-calendar-alt"></i>
+                              </span>
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control float-right"
+                              id="received_date"
+                            />
+                          </div>
+                          <!-- /.input group -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
                       <div class="col-md-6">
                         <form>
                           <div class="form-group row">
@@ -1612,16 +1263,8 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              DD Commission (%)
+                              Total Sales Return Amount
                             </label>
-                            <div class="col-sm-5">
-                              <input
-                                type="password"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="Password"
-                              />
-                            </div>
                           </div>
                         </form>
                       </div>
@@ -1630,10 +1273,10 @@
                           <div class="form-group row">
                             <div class="col-sm-10">
                               <input
-                                type="password"
+                                type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="Password"
+                                placeholder="0"
                               />
                             </div>
                           </div>
@@ -1648,7 +1291,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Exclusive Discount (%)
+                              Deduction (%)
                             </label>
                             <div class="col-sm-5">
                               <input
@@ -1684,7 +1327,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Terms of Delivery
+                              Note
                             </label>
                           </div>
                         </form>
@@ -1740,18 +1383,10 @@
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-5 col-form-label"
+                              class="col-sm-7 col-form-label"
                             >
-                              Additional Discount (%)
+                              Total Baddebts Amount
                             </label>
-                            <div class="col-sm-7">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
                           </div>
                         </form>
                       </div>
@@ -1778,7 +1413,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Total Receivable
+                              Net Payable Amount
                             </label>
                           </div>
                         </form>
@@ -1801,16 +1436,6 @@
                     <div class="row justify-content-end">
                       <div class="col-md-3">
                         <button type="button" class="btn btn-block btn-primary">
-                          Get Pass
-                        </button>
-                      </div>
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-danger">
-                          Save & Post
-                        </button>
-                      </div>
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-success">
                           Save
                         </button>
                       </div>

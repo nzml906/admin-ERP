@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fullcalendar/bootstrap@4.4.0",
-      "C:\\Users\\Administrator\\Desktop\\vat-ui"
+      "C:\\Users\\nazmul\\Desktop\\vat-ui"
     ]
   ],
   "_from": "@fullcalendar/bootstrap@4.4.0",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fullcalendar/bootstrap/-/bootstrap-4.4.0.tgz",
   "_spec": "4.4.0",
-  "_where": "C:\\Users\\Administrator\\Desktop\\vat-ui",
+  "_where": "C:\\Users\\nazmul\\Desktop\\vat-ui",
   "author": {
     "name": "Adam Shaw",
     "email": "arshaw@arshaw.com",
