@@ -1976,6 +1976,7 @@
                               id="customRadioInline1"
                               name="customRadioInline1"
                               class="custom-control-input"
+                              value="cash"
                               checked
                             />
                             <label
@@ -1993,6 +1994,7 @@
                               id="customRadioInline2"
                               name="customRadioInline1"
                               class="custom-control-input"
+                              value="cheque"
                             />
                             <label
                               class="custom-control-label"
@@ -2009,6 +2011,7 @@
                               id="customRadioInline3"
                               name="customRadioInline1"
                               class="custom-control-input"
+                              value="due"
                             />
                             <label
                               class="custom-control-label"
@@ -2076,8 +2079,67 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Bank Name -->
+                    <div class="row" id="bankname" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Bank Name
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Cheque No. -->
+                    <div class="row" id="chequeno" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Cheque No.
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-6">
+                    <!-- Total Amount -->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -2106,6 +2168,7 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Additional Discount(TK) -->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -2134,6 +2197,7 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Overhead Cost(%) -->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -2176,6 +2240,106 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Net Payable -->
+                    <div class="row" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Net Payable
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Acc No. -->
+                    <div class="row" id="accno" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Acc No.
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Check Issue Date -->
+                    <div class="row" id="issuedate" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Check Issue Date
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group">
+                            <div
+                              class="input-group date"
+                              id="reservationdate"
+                              data-target-input="nearest"
+                            >
+                              <div
+                                class="input-group-append"
+                                data-target="#reservationdate"
+                                data-toggle="datetimepicker"
+                              >
+                                <div class="input-group-text">
+                                  <i class="fa fa-calendar"></i>
+                                </div>
+                              </div>
+                              <input
+                                type="text"
+                                class="form-control datetimepicker-input"
+                                data-target="#reservationdate"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Paid Amount -->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -2204,23 +2368,82 @@
                         </form>
                       </div>
                     </div>
-                    <div class="row justify-content-end">
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-primary">
-                          Save
-                        </button>
+                    <!-- Ref. No. -->
+                    <div class="row" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Ref. No.
+                            </label>
+                          </div>
+                        </form>
                       </div>
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-danger">
-                          Cancel
-                        </button>
-                      </div>
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-success">
-                          Post
-                        </button>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </form>
                       </div>
                     </div>
+                    <!-- Due Amount -->
+                    <div class="row" style="display: none;">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Due Amount
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- button row -->
+                <div class="row mt-3 justify-content-end">
+                  <div class="col-md-1">
+                    <button type="button" class="btn btn-block btn-primary">
+                      Save
+                    </button>
+                  </div>
+                  <div class="col-md-1">
+                    <button type="button" class="btn btn-block btn-danger">
+                      Cancel
+                    </button>
+                  </div>
+                  <div class="col-md-1">
+                    <button type="button" class="btn btn-block btn-success">
+                      Post
+                    </button>
                   </div>
                 </div>
               </div>
@@ -2229,13 +2452,8 @@
         </section>
       </div>
 
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-      </aside>
-      <!-- /.control-sidebar -->
+      <aside class="control-sidebar control-sidebar-dark"></aside>
     </div>
-    <!-- ./wrapper -->
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
@@ -2275,13 +2493,27 @@
     <!-- Page script -->
     <script>
       $(function () {
-        //Initialize Select2 Elements
-        // $(".select2").select2();
+        $('input:radio[name="customRadioInline1"]').change(function () {
+          if ($(this).is(':checked') && $(this).val() == 'cash') {
+            $('#bankname').hide()
+            $('#chequeno').hide()
+            $('#accno').hide()
+            $('#issuedate').hide()
+          }
+          if ($(this).is(':checked') && $(this).val() == 'cheque') {
+            $('#bankname').show()
+            $('#chequeno').show()
+            $('#accno').show()
+            $('#issuedate').show()
+          }
 
-        // //Initialize Select2 Elements
-        // $(".select2bs4").select2({
-        //   theme: "bootstrap4",
-        // });
+          if ($(this).is(':checked') && $(this).val() == 'due') {
+            $('#bankname').hide()
+            $('#chequeno').hide()
+            $('#accno').hide()
+            $('#issuedate').hide()
+          }
+        })
 
         //Datemask dd/mm/yyyy
         $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
@@ -2303,6 +2535,11 @@
             format: 'MM/DD/YYYY hh:mm A',
           },
         })
+
+        $('#reservationdate').datetimepicker({
+          format: 'L',
+        })
+
         //Date range as a button
         $('#daterange-btn').daterangepicker(
           {
@@ -2335,7 +2572,7 @@
 
         //Timepicker
         $('#timepicker').datetimepicker({
-          format: 'LT',
+          format: 'D',
         })
 
         //Bootstrap Duallistbox
