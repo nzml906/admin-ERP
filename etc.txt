@@ -20,4 +20,5 @@ http://localhost:3000/Credit-Transfer.html
 http://localhost:3000/Installment-Recieve-Voucher.html
 
 http://localhost:3000/Installment-Sales.html
+http://localhost:3000/Stock-Transfer.html
 
