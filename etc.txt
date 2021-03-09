@@ -18,3 +18,4 @@ http://localhost:3000/mushak-6.8.html
 http://localhost:3000/VAT-Source-informaion.html
 
 http://localhost:3000/VDS-Received.html
+http://localhost:3000/Credit-Transfer.html
