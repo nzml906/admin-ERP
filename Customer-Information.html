@@ -830,11 +830,11 @@
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
-            <!-- Accounts Head Setup -->
-            <div class="card card-lightblue">
+            <!-- Customer Information -->
+            <div class="card card-purple">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
-                  Accounts Head Setup
+                  Customer Information
                 </h3>
 
                 <div class="card-tools">
@@ -857,7 +857,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-8">
-                    <!-- Group Ledger Head-->
+                    <!-- Customer Type-->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -866,7 +866,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Group Ledger Head
+                              Customer Type
                             </label>
                           </div>
                         </form>
@@ -892,7 +892,7 @@
                         </form>
                       </div>
                     </div>
-                    <!-- Subsidiary Ledger Step-1-->
+                    <!-- Sales Type-->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -901,7 +901,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Subsidiary Ledger Step-1
+                              Sales Type
                             </label>
                           </div>
                         </form>
@@ -927,7 +927,7 @@
                         </form>
                       </div>
                     </div>
-                    <!-- Subsidiary Ledger Step-2-->
+                    <!-- Division Name-->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -936,7 +936,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Subsidiary Ledger Step-2
+                              Division Name
                             </label>
                           </div>
                         </form>
@@ -962,7 +962,7 @@
                         </form>
                       </div>
                     </div>
-                    <!-- Subsidiary Ledger Step-3-->
+                    <!-- District Name-->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -971,7 +971,7 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Subsidiary Ledger Step-3
+                              District Name
                             </label>
                           </div>
                         </form>
@@ -997,7 +997,7 @@
                         </form>
                       </div>
                     </div>
-                    <!-- Accound Head Name -->
+                    <!-- Area Name-->
                     <div class="row">
                       <div class="col-md-6">
                         <form>
@@ -1006,7 +1006,42 @@
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Accound Head Name
+                              Area Name
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <select
+                                class="form-control select2"
+                                style="width: 100%;"
+                              >
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Customer Code -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Customer Code
                             </label>
                           </div>
                         </form>
@@ -1019,14 +1054,43 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
                     </div>
-                    <!-- Account Head Details -->
+                    <!-- Customer Name -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Customer Name
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Address -->
                     <div class="row">
                       <div class="col-12">
                         <div class="row">
@@ -1037,7 +1101,7 @@
                                   for="inputPassword"
                                   class="col-sm-7 col-form-label"
                                 >
-                                  Account Head Details
+                                  Address
                                 </label>
                               </div>
                             </form>
@@ -1058,26 +1122,332 @@
                         </div>
                       </div>
                     </div>
-
-                    <!-- button row -->
-                    <div class="row mt-3 justify-content-end">
-                      <div class="col-md-2">
-                        <button
-                          type="button"
-                          class="btn btn-block btn-outline-secondary"
-                        >
-                          Save
-                        </button>
+                    <!-- Phone -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Phone
+                            </label>
+                          </div>
+                        </form>
                       </div>
-                      <div class="col-md-2">
-                        <button
-                          type="button"
-                          class="btn btn-block btn-outline-danger"
-                        >
-                          Reset
-                        </button>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
                       </div>
                     </div>
+                    <!-- Mobile -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Mobile
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Ceilling Amount -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              Ceilling Amount
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- STC Amount -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              STC Amount
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- YC Amount -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-7 col-form-label"
+                            >
+                              YC Amount
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-header">
+                <h3 class="card-title h3 font-weight-bold">
+                  Attention Contact
+                </h3>
+
+                <div class="card-tools">
+                  <button
+                    type="button"
+                    class="btn btn-tool"
+                    data-card-widget="collapse"
+                  >
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <!-- Name -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        Name
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- Designation -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        Designation
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- Mobile -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        Mobile
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- BIN No -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        BIN No
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- NID No -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        NID No
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- Type -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Type</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Status -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Status</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- BUTTONS--------- -->
+                <div class="row mt-3 justify-content-center">
+                  <div class="col-md-1">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-outline-secondary"
+                    >
+                      Save
+                    </button>
+                  </div>
+                  <div class="col-md-1">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-outline-danger"
+                    >
+                      Reset
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1117,7 +1487,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- GL Head -->
+                  <!-- Division -->
                   <div class="col-md-2">
                     <div class="row">
                       <div class="col-md-4">
@@ -1127,7 +1497,7 @@
                               for="inputPassword"
                               class="col-sm-12 col-form-label"
                             >
-                              GL Head
+                              Division
                             </label>
                           </div>
                         </form>
@@ -1154,7 +1524,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- SL-1 Head -->
+                  <!--Area -->
                   <div class="col-md-2">
                     <div class="row">
                       <div class="col-md-4">
@@ -1164,7 +1534,7 @@
                               for="inputPassword"
                               class="col-sm-12 col-form-label"
                             >
-                              SL-1 Head
+                              Area
                             </label>
                           </div>
                         </form>
@@ -1191,7 +1561,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- SL-2 Head -->
+                  <!-- TRT -->
                   <div class="col-md-2">
                     <div class="row">
                       <div class="col-md-4">
@@ -1201,7 +1571,7 @@
                               for="inputPassword"
                               class="col-sm-12 col-form-label"
                             >
-                              SL-2 Head
+                              TRT
                             </label>
                           </div>
                         </form>
@@ -1228,43 +1598,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- SL-3 Head -->
-                  <div class="col-md-2">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-12 col-form-label"
-                            >
-                              SL-3 Head
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-8">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <select
-                                class="form-control select2"
-                                style="width: 100%;"
-                              >
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                              </select>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+
                   <!-- Submit -->
                   <div class="col-md-1">
                     <button
@@ -1277,7 +1611,7 @@
                 </div>
               </div>
             </div>
-            <!-- ledger list -->
+            <!-- Customer list -->
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
@@ -1309,18 +1643,13 @@
               </div>
               <div class="card-body p-0">
                 <table class="table table-bordered h6">
-                  <thead class="bg-lightblue">
+                  <thead class="bg-purple">
                     <tr>
                       <th style="width: 3%;">SL</th>
-                      <th style="width: 17%;">GL Head</th>
-                      <th style="width: 20%;">SL-1 Head</th>
-                      <th style="width: 10%;">SL-2 Head</th>
-                      <th style="width: 20%;">SL-3 Head</th>
-                      <th style="width: 10%;">A/C ID</th>
-                      <th style="width: 10%;">A/C Name</th>
-                      <th style="width: 10%;">Head Details</th>
-                      <th style="width: 10%;">VAT Expense (%in)</th>
-                      <th style="width: 10%;">VAT Expense (%out)</th>
+                      <th style="width: 17%;">Customer Name</th>
+                      <th style="width: 20%;">Customer Details</th>
+                      <th style="width: 10%;">Customer Type</th>
+                      <th style="width: 20%;">Attention Contact</th>
                       <th style="width: 5%;">Action</th>
                       <th style="width: 5%;">Delete</th>
                     </tr>
@@ -1328,11 +1657,6 @@
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
@@ -1356,11 +1680,6 @@
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
                       <td>00 Cr</td>
