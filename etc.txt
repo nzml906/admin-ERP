@@ -26,3 +26,4 @@ http://localhost:3000/Machine-Information.html
 http://localhost:3000/PhysicalVerification.html
 http://localhost:3000/Supplier-Setup.html
 http://localhost:3000/Cash-Book.html
+http://localhost:3000/Income-Statement.html
