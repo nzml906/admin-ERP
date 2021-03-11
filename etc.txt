@@ -1,4 +1,3 @@
--------------Routing-------------------
 http://localhost:3000/batch-setup.html
 http://localhost:3000/batch-wise-production.html
 http://localhost:3000/balance-sheet.html
@@ -16,15 +15,13 @@ http://localhost:3000/Product-Setup-1.html
 http://localhost:3000/mushak-6.8.html
 http://localhost:3000/VAT-Source-informaion.html
 http://localhost:3000/VDS-Received.html
-
 http://localhost:3000/Credit-Transfer.html
 http://localhost:3000/Installment-Recieve-Voucher.html
-
 http://localhost:3000/Installment-Sales.html
 http://localhost:3000/Stock-Transfer.html
 http://localhost:3000/Shareholder-Setup.html
-
 http://localhost:3000/COA-setup-2.html
 http://localhost:3000/Customer-Information.html
 http://localhost:3000/Machine-Information.html
 http://localhost:3000/PhysicalVerification.html
+http://localhost:3000/Supplier-Setup.html
