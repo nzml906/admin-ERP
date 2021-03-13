@@ -30536,4 +30536,11 @@ body {
 .card-body.p-0 .table thead > tr > th:first-of-type {
   padding-left: 0.3rem;
 }
+
+.card-body.p-0 .table tbody > tr > td:last-of-type,
+.card-body.p-0 .table tbody > tr > th:last-of-type,
+.card-body.p-0 .table thead > tr > td:last-of-type,
+.card-body.p-0 .table thead > tr > th:last-of-type {
+  padding-right: 0.3rem;
+}
 /*# sourceMappingURL=adminlte.css.map */
