@@ -30,3 +30,4 @@ http://localhost:3000/Income-Statement.html
 http://localhost:3000/Payable-List.html
 http://localhost:3000/Pending-aproval-online-voucher.html
 http://localhost:3000/Receivable-List.html
+http://localhost:3000/Sales-Order-List.html
