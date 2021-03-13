@@ -23,5 +23,12 @@
 @import 'parts/miscellaneous';
 
 body {
-    zoom: 85%;
+  zoom: 85%;
+}
+
+.card-body.p-0 .table tbody > tr > td:first-of-type,
+.card-body.p-0 .table tbody > tr > th:first-of-type,
+.card-body.p-0 .table thead > tr > td:first-of-type,
+.card-body.p-0 .table thead > tr > th:first-of-type {
+  padding-left: 0.3rem;
 }

@@ -33,3 +33,5 @@ http://localhost:3000/Receivable-List.html
 http://localhost:3000/Sales-Order-List.html
 
 http://localhost:3000/Unapproved-Sales-Order-List.html
+http://localhost:3000/Transection-List-(Day-Book).html
+

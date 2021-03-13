@@ -872,23 +872,8 @@
                 </nav>
               </div>
             </div>
-            <!-- Search Unapprove Sales Order card -->
-            <div class="card card-danger">
-              <div class="card-header p-2">
-                <h3 class="card-title h3 font-weight-bold">
-                  Search Unapprove Sales Order
-                </h3>
-
-                <div class="card-tools">
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="collapse"
-                  >
-                    <i class="fas fa-minus"></i>
-                  </button>
-                </div>
-              </div>
+            <!-- search submit card -->
+            <div class="card">
               <div class="card-body pb-0">
                 <div class="row justify-content-between">
                   <!-- From -->
@@ -977,7 +962,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Customer -->
+                  <!-- Voucher Type -->
                   <div class="col-md-3">
                     <div class="row">
                       <div class="col-md-4">
@@ -987,7 +972,7 @@
                               for="inputPassword"
                               class="col-sm-12 col-form-label"
                             >
-                              Customer
+                              Voucher Type
                             </label>
                           </div>
                         </form>
@@ -1014,7 +999,7 @@
                       </div>
                     </div>
                   </div>
-                  <!--Depo Name -->
+                  <!-- Voucher Of -->
                   <div class="col-md-2">
                     <div class="row">
                       <div class="col-md-4">
@@ -1024,7 +1009,7 @@
                               for="inputPassword"
                               class="col-sm-12 col-form-label"
                             >
-                              Depo Name
+                              Voucher Of
                             </label>
                           </div>
                         </form>
@@ -1051,22 +1036,42 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Original Copy -->
+                  <!--User -->
                   <div class="col-md-2">
-                    <form role="form">
-                      <div class="card-body">
-                        <div class="form-check">
-                          <input
-                            type="checkbox"
-                            class="form-check-input"
-                            id="exampleCheck1"
-                          />
-                          <label class="form-check-label" for="exampleCheck1">
-                            Original Copy
-                          </label>
-                        </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <form>
+                          <div class="form-group row">
+                            <label
+                              for="inputPassword"
+                              class="col-sm-12 col-form-label"
+                            >
+                              User
+                            </label>
+                          </div>
+                        </form>
                       </div>
-                    </form>
+                      <div class="col-md-8">
+                        <form>
+                          <div class="form-group row">
+                            <div class="col-sm-12">
+                              <select
+                                class="form-control select2"
+                                style="width: 100%;"
+                              >
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                   <!-- Submit -->
                   <div class="col-md-1">
@@ -1080,12 +1085,12 @@
                 </div>
               </div>
             </div>
-            <!-- Unapprove Sales Order List card -->
-            <div class="card card-danger">
+            <!-- Transaction List card -->
+            <div class="card card-olive">
               <div class="card-header p-2">
                 <div class="row justify-content-center">
                   <h3 class="card-title h3 font-weight-bold">
-                    Unapprove Sales Order List
+                    Transaction List
                   </h3>
                 </div>
               </div>
@@ -1102,163 +1107,192 @@
                 </div>
               </div>
             </div>
-            <!-- Sales Order List Table card -->
+            <!-- Voucher list -->
             <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  Results
-                  <span class="font-weight-bold">1-200</span>
-                  of
-                  <span class="font-weight-bold">9999</span>
-                </h3>
-
-                <div class="card-tools">
-                  <ul class="pagination pagination-sm float-right">
-                    <li class="page-item">
-                      <a class="page-link" href="#">&laquo;</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">&raquo;</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
               <div class="card-body p-0">
-                <table class="table table-bordered table-sm h6">
-                  <thead class="bg-danger">
+                <!-- <table class="table table-bordered table-sm h6">
+                  <thead class="bg-olive">
                     <tr class="text-center">
-                      <th style="width: 5%;">SL</th>
                       <th style="width: 5%;">Date</th>
-                      <th style="width: 10%;">Ref No.</th>
-                      <th style="width: 10%;">Party Details</th>
-                      <th style="width: 10%;">Order Qty</th>
-                      <th style="width: 10%;">Order Amount</th>
-                      <th style="width: 10%;">Delivery Amount</th>
-                      <th style="width: 5%;">Undelivered Amount</th>
-                      <th style="width: 5%;">Due Amount</th>
-                      <th style="width: 10%;">Option</th>
+                      <th style="width: 5%;">Voucher No.</th>
+                      <th style="width: 5%;">Voucher Type</th>
+                      <th style="width: 15%;">
+                        Acc. ID | Account Name
+                      </th>
+                      <th style="width: 5%;">Particulars</th>
+                      <th style="width: 5%;">Debit (BDT)</th>
+                      <th style="width: 5%;">Credit (BDT)</th>
                     </tr>
                   </thead>
                   <tbody class="text-center">
                     <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
+                      <td>2 Mar 2020</td>
                       <td>
                         <a href="pages/examples/invoice.html">OR9842</a>
                       </td>
                       <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
                       <td>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Tomato;">
-                            <i class="fas fa-search"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Dodgerblue;">
-                            <i class="fas fa-cart-plus ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
+                        <table class="table table-bordered table-sm h6">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table class="table table-bordered table-sm h6">
+                                  <tbody>
+                                    <tr>
+                                      <td>A009</td>
+                                      <td>City Bank</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table class="table table-bordered table-sm h6">
+                                  <tbody>
+                                    <tr>
+                                      <td>A008</td>
+                                      <td>Pubali Bank</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
+                      <td>
+                        <p>
+                          Issue-24 mar 20
+                        </p>
+                        <p>
+                          Issue-24 mar 20
+                        </p>
+
+                        <span class="font-italic font-weight-bold">
+                          Created By: Sharif
+                        </span>
+                      </td>
+                      <td>00 Cr</td>
+                      <td>00 Cr</td>
+                    </tr>
+                  </tbody>
+                </table> -->
+
+                <!-- <table class="table table-bordered table-sm h6">
+                  <tr class="bg-olive">
+                    <th colspan="1">Date</th>
+                    <th colspan="1">Voucher No.</th>
+                    <th colspan="1">Voucher Type</th>
+                    <th colspan="1">
+                      Acc. ID
+                    </th>
+                    <th colspan="1">
+                      Account Name
+                    </th>
+                    <th colspan="1">Particulars</th>
+                    <th colspan="1">Debit (BDT)</th>
+                    <th colspan="1">Credit (BDT)</th>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">21 Mar 2020</td>
+                    <td rowspan="2">A555</td>
+                    <td rowspan="2">Type</td>
+                    <td>A00001</td>
+                    <td>Pubali Bank</td>
+                    <td rowspan="2">Issue</td>
+                    <td>300.00</td>
+                    <td>00.00</td>
+                  </tr>
+                  <tr>
+                    <td>A00002</td>
+                    <td>Pubali Bank</td>
+                    <td>300.00</td>
+                    <td>00.00</td>
+                  </tr>
+                </table> -->
+
+                <table
+                  class="table table-bordered table-sm h6 text-center"
+                >
+                  <thead>
+                    <tr class="bg-olive">
+                      <th colspan="1">Date</th>
+                      <th colspan="1">Voucher No.</th>
+                      <th colspan="1">Voucher Type</th>
+                      <th colspan="1">
+                        Acc. ID
+                      </th>
+                      <th colspan="1">
+                        Account Name
+                      </th>
+                      <th colspan="1">Particulars</th>
+                      <th colspan="1">Debit (BDT)</th>
+                      <th colspan="1">Credit (BDT)</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                    <tr>
+                      <td
+                        
+                        class="align-middle "
+                        rowspan="2"
+                      >
+                        21 Mar 2020
+                      </td>
+                      <td class="align-middle" rowspan="2">A555</td>
+                      <td class="align-middle" rowspan="2">Type</td>
+                      <td class="align-middle">A00001</td>
+                      <td class="align-middle">Pubali Bank</td>
+                      <td class="align-middle" rowspan="2">
+                        <p>
+                          Issue-24 mar 20
+                        </p>
+                        <p>
+                          Issue-24 mar 20
+                        </p>
+
+                        <span class="font-italic font-weight-bold">
+                          Created By: Sharif
+                        </span>
+                      </td>
+                      <td class="align-middle">300.00</td>
+                      <td class="align-middle">00.00</td>
                     </tr>
                     <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="pages/examples/invoice.html">OR9842</a>
+                      <td class="align-middle">A00002</td>
+                      <td class="align-middle">0909- M/S Traders</td>
+                      <td class="align-middle">00.00</td>
+                      <td class="align-middle">300.00</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="align-middle" rowspan="2">21 Mar 2020</td>
+                      <td class="align-middle" rowspan="2">A555</td>
+                      <td class="align-middle" rowspan="2">Type</td>
+                      <td class="align-middle">A00001</td>
+                      <td class="align-middle">Pubali Bank</td>
+                      <td class="align-middle" rowspan="2">
+                        <p>
+                          Issue-24 mar 20
+                        </p>
+                        <p>
+                          Issue-24 mar 20
+                        </p>
+
+                        <span class="font-italic font-weight-bold">
+                          Created By: Sharif
+                        </span>
                       </td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Tomato;">
-                            <i class="fas fa-search"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Dodgerblue;">
-                            <i class="fas fa-cart-plus ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
+                      <td class="align-middle">300.00</td>
+                      <td class="align-middle">00.00</td>
                     </tr>
                     <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="pages/examples/invoice.html">OR9842</a>
-                      </td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Tomato;">
-                            <i class="fas fa-search"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Dodgerblue;">
-                            <i class="fas fa-cart-plus ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
+                      <td class="align-middle">A00002</td>
+                      <td class="align-middle">0909- M/S Traders</td>
+                      <td class="align-middle">00.00</td>
+                      <td class="align-middle">300.00</td>
                     </tr>
                   </tbody>
                 </table>
