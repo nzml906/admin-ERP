@@ -43,7 +43,7 @@
     />
   </head>
 
-  <body class="hold-transition sidebar-mini layout-fixed">
+  <body class="hold-transition sidebar-mini">
     <div class="wrapper">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -831,7 +831,7 @@
           <div class="container-fluid">
             <!-- Navbar -->
             <div class="row">
-              <div class="col-12 col-md-12">
+              <div class="d-none d-md-block col-md-12">
                 <nav
                   class="navbar navbar-expand navbar-light justify-content-between"
                 >
@@ -873,13 +873,13 @@
               </div>
             </div>
             <!-- search submit card -->
-            <div class="card">
+            <div class="card card-default">
               <div class="card-body pb-0">
                 <div class="row justify-content-between">
                   <!-- From -->
-                  <div class="col-md-2">
+                  <div class="col-md-3 col-sm-6">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-3">
                         <form>
                           <div class="form-group row">
                             <label
@@ -891,7 +891,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-md-9">
                         <form>
                           <div class="form-group">
                             <div
@@ -920,9 +920,9 @@
                     </div>
                   </div>
                   <!-- To -->
-                  <div class="col-md-2">
+                  <div class="col-md-3 col-sm-6">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-3">
                         <form>
                           <div class="form-group row">
                             <label
@@ -934,7 +934,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-md-9">
                         <form>
                           <div class="form-group">
                             <div
@@ -963,14 +963,14 @@
                     </div>
                   </div>
                   <!-- Voucher No. -->
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="row">
                       <div class="col-md-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
                               Voucher No.
                             </label>
@@ -994,7 +994,7 @@
                     </div>
                   </div>
                   <!-- Submit -->
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-lg-2">
                     <button
                       type="button"
                       class="btn btn-block btn-outline-secondary"
@@ -1027,7 +1027,7 @@
                 </div>
               </div>
             </div>
-            <!-- Voucher list table -->
+            <!-- Voucher list pagination -->
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
@@ -1057,287 +1057,340 @@
                   </ul>
                 </div>
               </div>
-              <div class="card-body p-0">
-                <table class="table table-bordered table-sm h6 text-center">
-                  <thead>
-                    <tr class="bg-purple">
-                      <th colspan="1">Date</th>
-                      <th colspan="1">Voucher No.</th>
-                      <th colspan="1">Voucher Type</th>
-                      <th colspan="1">
-                        Account Name
-                      </th>
-                      <th colspan="1">Particulars</th>
-                      <th colspan="1">Debit (BDT)</th>
-                      <th colspan="1">Credit (BDT)</th>
-                      <th colspan="1">Edit</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="align-middle" rowspan="2">
-                        21 Mar 2020
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        A333333
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Others Voucher
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Others
-                        </span>
-                      </td>
-                      <td class="align-middle">
-                        <h6>
-                          0909-m/s traders
-                        </h6>
-                        <h6>
-                          <span class=" font-weight-bold">
-                            Dhaka South, Dhaka
-                          </span>
-                        </h6>
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Invoice No. I333 missing
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Created By: Sharif
-                        </span>
-                      </td>
-                      <td class="align-middle">300.00</td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle" rowspan="2">
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td class="align-middle">
-                            <h6>
-                              0909-m/s traders
-                            </h6>
-                            <h6>
-                              <span class=" font-weight-bold">
-                                Dhaka South, Dhaka
+            </div>
+            <!-- Voucher list table -->
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body p-0">
+                    <div style="overflow-x: auto;">
+                      <table
+                        class="table table-bordered table-sm h6 text-center"
+                      >
+                        <thead>
+                          <tr class="bg-purple">
+                            <th colspan="1">Date</th>
+                            <th colspan="1">Voucher No.</th>
+                            <th colspan="1">Voucher Type</th>
+                            <th colspan="1">
+                              Account Name
+                            </th>
+                            <th colspan="1">Particulars</th>
+                            <th colspan="1">Debit (BDT)</th>
+                            <th colspan="1">Credit (BDT)</th>
+                            <th colspan="1">Edit</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle" rowspan="2">
+                              21 Mar 2020
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              A333333
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Others Voucher
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Others
                               </span>
-                            </h6>
-                          </td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle">300.00</td>
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td class="align-middle" rowspan="2">
-                        21 Mar 2020
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        A333333
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Others Voucher
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Others
-                        </span>
-                      </td>
-                      <td class="align-middle">
-                        <h6>
-                          0909-m/s traders
-                        </h6>
-                        <h6>
-                          <span class=" font-weight-bold">
-                            Dhaka South, Dhaka
-                          </span>
-                        </h6>
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Invoice No. I333 missing
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Created By: Sharif
-                        </span>
-                      </td>
-                      <td class="align-middle">300.00</td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle" rowspan="2">
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td class="align-middle">
-                            <h6>
-                              0909-m/s traders
-                            </h6>
-                            <h6>
-                              <span class=" font-weight-bold">
-                                Dhaka South, Dhaka
+                            </td>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Invoice No. I333 missing
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Created By: Sharif
                               </span>
-                            </h6>
-                          </td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle">300.00</td>
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td class="align-middle" rowspan="2">
-                        21 Mar 2020
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        A333333
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Others Voucher
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Others
-                        </span>
-                      </td>
-                      <td class="align-middle">
-                        <h6>
-                          0909-m/s traders
-                        </h6>
-                        <h6>
-                          <span class=" font-weight-bold">
-                            Dhaka South, Dhaka
-                          </span>
-                        </h6>
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Invoice No. I333 missing
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Created By: Sharif
-                        </span>
-                      </td>
-                      <td class="align-middle">300.00</td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle" rowspan="2">
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td class="align-middle">
-                            <h6>
-                              0909-m/s traders
-                            </h6>
-                            <h6>
-                              <span class=" font-weight-bold">
-                                Dhaka South, Dhaka
+                            </td>
+                            <td class="align-middle">300.00</td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle" rowspan="2">
+                              <a href="">
+                                <span
+                                  style="
+                                    font-size: 1.5em;
+                                    color: Mediumslateblue;
+                                  "
+                                >
+                                  <i class="fas fa-edit ml-2"></i>
+                                </span>
+                              </a>
+                              <a href="">
+                                <span style="font-size: 1.5em; color: Red;">
+                                  <i class="fas fa-trash-alt ml-2"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle">300.00</td>
+                          </tr>
+                        </tbody>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle" rowspan="2">
+                              21 Mar 2020
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              A333333
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Others Voucher
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Others
                               </span>
-                            </h6>
-                          </td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle">300.00</td>
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td class="align-middle" rowspan="2">
-                        21 Mar 2020
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        A333333
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Others Voucher
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Others
-                        </span>
-                      </td>
-                      <td class="align-middle">
-                        <h6>
-                          0909-m/s traders
-                        </h6>
-                        <h6>
-                          <span class=" font-weight-bold">
-                            Dhaka South, Dhaka
-                          </span>
-                        </h6>
-                      </td>
-                      <td class="align-middle" rowspan="2">
-                        <p>
-                          Invoice No. I333 missing
-                        </p>
-                        <span class="font-italic font-weight-bold">
-                          Created By: Sharif
-                        </span>
-                      </td>
-                      <td class="align-middle">300.00</td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle" rowspan="2">
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td class="align-middle">
-                            <h6>
-                              0909-m/s traders
-                            </h6>
-                            <h6>
-                              <span class=" font-weight-bold">
-                                Dhaka South, Dhaka
+                            </td>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Invoice No. I333 missing
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Created By: Sharif
                               </span>
-                            </h6>
-                          </td>
-                      <td class="align-middle">00.00</td>
-                      <td class="align-middle">300.00</td>
-                    </tr>
-                  </tbody>
-                </table>
+                            </td>
+                            <td class="align-middle">300.00</td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle" rowspan="2">
+                              <a href="">
+                                <span
+                                  style="
+                                    font-size: 1.5em;
+                                    color: Mediumslateblue;
+                                  "
+                                >
+                                  <i class="fas fa-edit ml-2"></i>
+                                </span>
+                              </a>
+                              <a href="">
+                                <span style="font-size: 1.5em; color: Red;">
+                                  <i class="fas fa-trash-alt ml-2"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle">300.00</td>
+                          </tr>
+                        </tbody>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle" rowspan="2">
+                              21 Mar 2020
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              A333333
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Others Voucher
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Others
+                              </span>
+                            </td>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Invoice No. I333 missing
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Created By: Sharif
+                              </span>
+                            </td>
+                            <td class="align-middle">300.00</td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle" rowspan="2">
+                              <a href="">
+                                <span
+                                  style="
+                                    font-size: 1.5em;
+                                    color: Mediumslateblue;
+                                  "
+                                >
+                                  <i class="fas fa-edit ml-2"></i>
+                                </span>
+                              </a>
+                              <a href="">
+                                <span style="font-size: 1.5em; color: Red;">
+                                  <i class="fas fa-trash-alt ml-2"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle">300.00</td>
+                          </tr>
+                        </tbody>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle" rowspan="2">
+                              21 Mar 2020
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              A333333
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Others Voucher
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Others
+                              </span>
+                            </td>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle" rowspan="2">
+                              <p>
+                                Invoice No. I333 missing
+                              </p>
+                              <span class="font-italic font-weight-bold">
+                                Created By: Sharif
+                              </span>
+                            </td>
+                            <td class="align-middle">300.00</td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle" rowspan="2">
+                              <a href="">
+                                <span
+                                  style="
+                                    font-size: 1.5em;
+                                    color: Mediumslateblue;
+                                  "
+                                >
+                                  <i class="fas fa-edit ml-2"></i>
+                                </span>
+                              </a>
+                              <a href="">
+                                <span style="font-size: 1.5em; color: Red;">
+                                  <i class="fas fa-trash-alt ml-2"></i>
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle">
+                              <h6>
+                                0909-m/s traders
+                              </h6>
+                              <h6>
+                                <span class="font-weight-bold">
+                                  Dhaka South, Dhaka
+                                </span>
+                              </h6>
+                            </td>
+                            <td class="align-middle">00.00</td>
+                            <td class="align-middle">300.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Voucher list pagination -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  Results
+                  <span class="font-weight-bold">1-200</span>
+                  of
+                  <span class="font-weight-bold">9999</span>
+                </h3>
+                <div class="card-tools">
+                  <ul class="pagination pagination-sm float-right">
+                    <li class="page-item">
+                      <a class="page-link" href="#">&laquo;</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">&raquo;</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -1494,8 +1547,8 @@
       })
     </script>
     <!-- InputMask -->
-    <script src="../../plugins/moment/moment.min.js"></script>
-    <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
     <!-- Select2 -->
     <script src="plugins/select2/js/select2.full.min.js"></script>
     <!-- Bootstrap4 Duallistbox -->
