@@ -224,7 +224,7 @@
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           />
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
@@ -831,11 +831,9 @@
         <section class="content">
           <div class="container-fluid">
             <!-- Sales order card -->
-            <div class="card card-warning">
-              <div class="card-header">
-                <h3 class="card-title h3 font-weight-bold">
-                  Sales Order
-                </h3>
+            <div class="card card-purple pb-0">
+              <div class="card-header p-2">
+                <h3 class="card-title h3 font-weight-bold">Sales Order</h3>
 
                 <div class="card-tools">
                   <button
@@ -845,316 +843,257 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
+              <div class="card-body pb-0">
                 <div class="row">
-                  <!-- 1st main col -->
-                  <div class="col-md-6">
-                    <div class="row">
-                      <!-- row 01 -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Work Oredr No</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Sales Type</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Currency</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Sales Reference</label>
-                          <select
-                            class="form-control select2"
-                            style="width: 100%;"
-                          >
-                            <option selected="selected">Alabama</option>
-                            <option>Alaska</option>
-                            <option>California</option>
-                            <option>Delaware</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Washington</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Delivery Note</label>
-                          <textarea
-                            class="form-control"
-                            rows="3"
-                            placeholder="Enter ..."
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            Despatch Document No.
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">BIN No.</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            placeholder="Enter email"
-                          />
-                        </div>
-                      </div>
+                  <!-- Work Order No. -->
+                  <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Work Order No.</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
                     </div>
                   </div>
-
-                  <!-- 2nd main col -->
-                  <div class="col-md-6">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-2 col-form-label"
-                            >
-                              Code
-                            </label>
-                            <div class="col-sm-10">
-                              <input
-                                type="password"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="Password"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group">
-                            <select
-                              class="form-control select2"
-                              style="width: 100%;"
-                            >
-                              <option selected="selected">
-                                Declaration Search
-                              </option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-4">
-                        <button
-                          type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
+                  <!--          spacer              -->
+                  <div class="d-none d-md-block col-md-1 col-lg-2"></div>
+                  <!-- Customer -->
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <form>
+                      <div class="form-group row">
+                        <label
+                          for="inputPassword"
+                          class="col-sm-5 col-lg-5 col-form-label"
                         >
-                          Load Undelivery
-                        </button>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-10 col-form-label"
-                            >
-                              Delivery Point
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-8">
-                        <form>
-                          <div class="form-group">
-                            <select
-                              class="form-control select2"
-                              style="width: 100%;"
-                            >
-                              <option selected="selected">
-                                Declaration Search
-                              </option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-10 col-form-label"
-                            >
-                              Sales Date
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-8">
-                        <!-- Sales Date -->
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="far fa-calendar-alt"></i>
-                              </span>
-                            </div>
-                            <input
-                              type="text"
-                              class="form-control float-right"
-                              id="received_date"
-                            />
-                          </div>
-                          <!-- /.input group -->
+                          Customer
+                        </label>
+                        <div class="col-sm-7 col-lg-7">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputPassword"
+                            placeholder="code"
+                          />
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-10 col-form-label"
-                            >
-                              Delivery Date
-                            </label>
-                          </div>
-                        </form>
+                    </form>
+                  </div>
+                  <div class="col-sm-4 col-md-2 col-lg-2">
+                    <form>
+                      <div class="form-group">
+                        <select
+                          class="form-control select2"
+                          style="width: 100%"
+                        >
+                          <option selected="selected">Select one</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
+                        </select>
                       </div>
-                      <div class="col-md-8">
-                        <!-- Delivery Date -->
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="far fa-calendar-alt"></i>
-                              </span>
+                    </form>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <button
+                      type="button"
+                      class="mb-3 btn btn-block btn-outline-secondary"
+                    >
+                      Load Undelivery
+                    </button>
+                  </div>
+                  <!---->
+                  <!-- Sales Type -->
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <label>Sales Type</label>
+                      <select class="form-control select2" style="width: 100%">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Delivery Point -->
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <label>Delivery Point</label>
+                      <select class="form-control select2" style="width: 100%">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Currency -->
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <label>Currency</label>
+                      <select class="form-control select2" style="width: 100%">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Sales Date & Time -->
+                  <div class="col-md-4 col-sm-12">
+                    <form>
+                      <div class="form-group">
+                        <label
+                          for="inputPassword"
+                          class="col-sm-12 col-form-label"
+                        >
+                          Sales Date & Time
+                        </label>
+                        <div
+                          class="input-group date"
+                          id="expirydate"
+                          data-target-input="nearest"
+                        >
+                          <div
+                            class="input-group-append"
+                            data-target="#expirydate"
+                            data-toggle="datetimepicker"
+                          >
+                            <div class="input-group-text">
+                              <i class="fa fa-calendar"></i>
                             </div>
-                            <input
-                              type="text"
-                              class="form-control float-right"
-                              id="delivery_date"
-                            />
                           </div>
-                          <!-- /.input group -->
+                          <input
+                            type="text"
+                            class="form-control datetimepicker-input"
+                            data-target="#expirydate"
+                          />
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Terms of Payment
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
+                    </form>
+                  </div>
+                  <!-- Sales Reference -->
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <label>Sales Reference</label>
+                      <select class="form-control select2" style="width: 100%">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Delivery Date & Time -->
+                  <div class="col-md-4 col-sm-12">
+                    <form>
+                      <div class="form-group">
+                        <label
+                          for="inputPassword"
+                          class="col-sm-12 col-form-label"
+                        >
+                          Delivery Date & Time
+                        </label>
+                        <div
+                          class="input-group date"
+                          id="delivery_"
+                          data-target-input="nearest"
+                        >
+                          <div
+                            class="input-group-append"
+                            data-target="#delivery_"
+                            data-toggle="datetimepicker"
+                          >
+                            <div class="input-group-text">
+                              <i class="fa fa-calendar"></i>
                             </div>
                           </div>
-                        </form>
+                          <input
+                            type="text"
+                            class="form-control datetimepicker-input"
+                            data-target="#delivery_"
+                          />
+                        </div>
                       </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Destination
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-6">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
+                    </form>
+                  </div>
+                  <!-- Delivery Note -->
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <label>Delivery Note</label>
+                      <textarea
+                        class="form-control"
+                        rows="3"
+                        placeholder="Enter ..."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!-- Terms of Payment -->
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Terms of Payment</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- Despatch Document No. -->
+                  <div class="col-sm-12 col-md-4">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">
+                        Despatch Document No.
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- BIN No. -->
+                  <div class="col-sm-12 col-md-4">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">BIN No.</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!-- Destination -->
+                  <div class="col-sm-12 col-md-4">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Destination</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -1162,9 +1101,8 @@
             </div>
             <!-- Sales Details card -->
             <div class="card card-default">
-              <div class="card-header">
+              <div class="card-header p-2">
                 <h3 class="card-title h3">Sales Details</h3>
-
                 <div class="card-tools">
                   <button
                     type="button"
@@ -1173,34 +1111,28 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
+              <div class="card-body pb-0">
+                <!-- form row -->
                 <div class="row">
-                  <div class="col-md-1">
+                  <!-- SL -->
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">SL</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-2">
+                  <!-- Product -->
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label>Product</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -1211,11 +1143,10 @@
                       </select>
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label>Category</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -1226,10 +1157,10 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label>Brand</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -1240,103 +1171,96 @@
                       </select>
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Details</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Order Quantity</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Free Qty</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Rate</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Discount(%)</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-1">
+                  <div class="col-md-2 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Amount</label>
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
                 </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-lg-1">
+                <!-- next cancel -->
+                <div class="row justify-content-center mb-3">
+                  <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="mb-2 btn btn-block btn-outline-secondary"
                     >
                       Next
                     </button>
                   </div>
 
-                  <div class="col-lg-1">
+                  <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-outline-secondary"
                     >
                       Cancel
                     </button>
                   </div>
                 </div>
-
                 <!-- Expanded menu for mushak 6.3 -->
-                <div class="card card-warning collapsed-card">
-                  <div class="card-header">
+                <div class="card card-purple pb-0 collapsed-card">
+                  <div class="card-header p-2">
                     <h3 class="card-title h3 font-weight-bold">
                       <button
                         type="button"
@@ -1348,26 +1272,25 @@
                       Expanded Menu for mushak 6.3
                     </h3>
                   </div>
-
-                  <div class="card-body">
+                  <div class="card-body pb-0">
                     <div class="row">
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label for="exampleInputEmail1">Code</label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-2">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label>Product Name</label>
                           <select
                             class="form-control select2"
-                            style="width: 100%;"
+                            style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
                             <option>Alaska</option>
@@ -1379,23 +1302,23 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label for="exampleInputEmail1">UOM</label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label>Balance</label>
                           <select
                             class="form-control select2"
-                            style="width: 100%;"
+                            style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
                             <option>Alaska</option>
@@ -1407,12 +1330,12 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label>Qty</label>
                           <select
                             class="form-control select2"
-                            style="width: 100%;"
+                            style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
                             <option>Alaska</option>
@@ -1424,95 +1347,92 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label for="exampleInputEmail1">Sales Rate</label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label for="exampleInputEmail1">
                             Total Amount Without VAT
                           </label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label for="exampleInputEmail1">%Sub Duty</label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            SD Amount
-                          </label>
+                          <label for="exampleInputEmail1"> SD Amount </label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">
-                            VAT
-                          </label>
+                          <label for="exampleInputEmail1"> VAT </label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
-                      <div class="col-md-1">
+                      <div class="col-sm-6 col-md-4 col-xl-3">
                         <div class="form-group">
                           <label for="exampleInputEmail1">
                             Total Amount with VAT & SD
                           </label>
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Enter email"
+                            placeholder=""
                           />
                         </div>
                       </div>
                     </div>
+                    <!-- next cancel -->
                     <div class="row justify-content-center">
-                      <div class="col-lg-1">
+                      <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
                         <button
                           type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
+                          class="mb-2 btn btn-block btn-outline-secondary"
                         >
                           Next
                         </button>
                       </div>
 
-                      <div class="col-lg-1">
+                      <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
                         <button
                           type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
+                          class="btn btn-block btn-outline-secondary"
                         >
                           Cancel
                         </button>
@@ -1522,90 +1442,69 @@
                 </div>
               </div>
             </div>
-            <!-- Product List card -->
-            <div class="card">
+            <!-- Preview table card-->
+            <div class="card pb-0">
+              <div class="card-body p-0">
+                <div style="overflow-x: auto">
+                  <table class="table table-bordered table-sm h6">
+                    <thead class="bg-purple">
+                      <tr class="text-center">
+                        <th style="width: 5%">SL</th>
+                        <th style="width: 10%">Product Name</th>
+                        <th style="width: 10%">Category</th>
+                        <th style="width: 10%">Brand</th>
+                        <th style="width: 10%">Order Qty</th>
+                        <th style="width: 10%">Free Qty</th>
+                        <th style="width: 10%">Rate</th>
+                        <th style="width: 5%">Discount(%)</th>
+
+                        <th style="width: 10%">Amount</th>
+                        <th style="width: 10%">Option</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span
+                              style="font-size: 1.2em; color: Mediumslateblue"
+                            >
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.2em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- table form card -->
+            <div class="card pb-0">
               <div class="card-body">
-                <table class="table table-bordered h6">
-                  <thead class="bg-green">
-                    <tr>
-                      <th style="width: 5%;">SL</th>
-                      <th style="width: 10%;">Product Name</th>
-                      <th style="width: 10%;">Category</th>
-                      <th style="width: 10%;">Brand</th>
-                      <th style="width: 10%;">Oredr Qty</th>
-                      <th style="width: 10%;">Free Qty</th>
-                      <th style="width: 10%;">Rate</th>
-                      <th style="width: 10%;">Discount(%)</th>
-                      <th style="width: 10%;">VAT</th>
-                      <th style="width: 10%;">Amount</th>
-                      <th style="width: 5%;">Action</th>
-                      <th style="width: 5%;">Delete</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-primary btn-xs"
-                        >
-                          Edit
-                        </button>
-                      </td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-danger btn-xs"
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-primary btn-xs"
-                        >
-                          Edit
-                        </button>
-                      </td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-danger btn-xs"
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
                 <!-- form row -->
-                <div class="row mt-3">
-                  <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12 col-xl-6 col-sm-12">
+                    <!-- DD Commission (%) -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1616,83 +1515,85 @@
                             </label>
                             <div class="col-sm-5">
                               <input
-                                type="password"
+                                type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="Password"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                               <input
-                                type="password"
+                                type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="Password"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
                     </div>
+                    <!-- Exclusive Discount (%) -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-8 col-form-label"
                             >
                               Exclusive Discount (%)
                             </label>
-                            <div class="col-sm-5">
+                            <div class="col-sm-4">
                               <input
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                               <input
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
                     </div>
+                    <!-- Terms of Delivery -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
                               Terms of Delivery
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                               <input
                                 type="text"
                                 class="form-control"
@@ -1705,9 +1606,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12 col-xl-6 col-sm-12">
+                    <!-- Total Amount -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1719,7 +1621,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1734,28 +1636,29 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Additional Discount (%) -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-8 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-5 col-form-label"
+                              class="col-sm-7 col-form-label"
                             >
                               Additional Discount (%)
                             </label>
-                            <div class="col-sm-7">
+                            <div class="col-sm-5">
                               <input
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-4 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1763,15 +1666,16 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
                     </div>
+                    <!-- Total Receivable -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1783,7 +1687,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1798,23 +1702,33 @@
                         </form>
                       </div>
                     </div>
-                    <div class="row justify-content-end">
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-primary">
-                          Get Pass
-                        </button>
-                      </div>
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-danger">
-                          Save & Post
-                        </button>
-                      </div>
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-success">
-                          Save
-                        </button>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+                <!-- button row -->
+                <div class="row justify-content-end">
+                  <div class="col-sm-3 col-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-outline-secondary mb-2"
+                    >
+                      Get Pass
+                    </button>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-outline-success mb-2"
+                    >
+                      Save & Post
+                    </button>
+                  </div>
+                  <div class="col-sm-3 col-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-outline-secondary"
+                    >
+                      Post
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1837,7 +1751,7 @@
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-      $.widget.bridge('uibutton', $.ui.button)
+      $.widget.bridge("uibutton", $.ui.button);
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1878,76 +1792,79 @@
         // });
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { placeholder: 'mm/dd/yyyy' })
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
         //Money Euro
-        $('[data-mask]').inputmask()
+        $("[data-mask]").inputmask();
 
         //Date range picker
-        $('#delivery_date').daterangepicker()
-        $('#received_date').daterangepicker()
-        $('#po_date').daterangepicker()
-        $('#lc_date').daterangepicker()
+        $("#delivery_date").daterangepicker();
+        $("#received_date").daterangepicker();
+        $("#po_date").daterangepicker();
+        $("#lc_date").daterangepicker();
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
+        $("#reservationtime").daterangepicker({
           timePicker: true,
           timePickerIncrement: 30,
           locale: {
-            format: 'MM/DD/YYYY hh:mm A',
+            format: "MM/DD/YYYY hh:mm A",
           },
-        })
+        });
+        // $("#expirydate").datetimepicker({
+        //   format: "L",
+        // });
         //Date range as a button
-        $('#daterange-btn').daterangepicker(
+        $("#daterange-btn").daterangepicker(
           {
             ranges: {
               Today: [moment(), moment()],
               Yesterday: [
-                moment().subtract(1, 'days'),
-                moment().subtract(1, 'days'),
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
               ],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [
-                moment().startOf('month'),
-                moment().endOf('month'),
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
               ],
-              'Last Month': [
-                moment().subtract(1, 'month').startOf('month'),
-                moment().subtract(1, 'month').endOf('month'),
+              "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month"),
               ],
             },
-            startDate: moment().subtract(29, 'days'),
+            startDate: moment().subtract(29, "days"),
             endDate: moment(),
           },
           function (start, end) {
-            $('#reportrange span').html(
-              start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'),
-            )
-          },
-        )
+            $("#reportrange span").html(
+              start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+          }
+        );
 
         //Timepicker
-        $('#timepicker').datetimepicker({
-          format: 'LT',
-        })
+        $("#timepicker").datetimepicker({
+          format: "LT",
+        });
 
         //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
+        $(".duallistbox").bootstrapDualListbox();
 
         //Colorpicker
-        $('.my-colorpicker1').colorpicker()
+        $(".my-colorpicker1").colorpicker();
         //color picker with addon
-        $('.my-colorpicker2').colorpicker()
+        $(".my-colorpicker2").colorpicker();
 
-        $('.my-colorpicker2').on('colorpickerChange', function (event) {
-          $('.my-colorpicker2 .fa-square').css('color', event.color.toString())
-        })
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
 
-        $('input[data-bootstrap-switch]').each(function () {
-          $(this).bootstrapSwitch('state', $(this).prop('checked'))
-        })
-      })
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
+      });
     </script>
     <!-- InputMask -->
     <script src="../../plugins/moment/moment.min.js"></script>
