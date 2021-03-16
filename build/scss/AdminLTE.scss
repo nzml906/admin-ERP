@@ -22,9 +22,9 @@
 @import 'parts/plugins';
 @import 'parts/miscellaneous';
 
-body {
-  zoom: 85%;
-}
+// body {
+//   zoom: 85%;
+// }
 
 .card-body.p-0 .table tbody > tr > td:first-of-type,
 .card-body.p-0 .table tbody > tr > th:first-of-type,
@@ -40,10 +40,22 @@ body {
   padding-right: 0.3rem;
 }
 
-// .button-purple {
-//   .btn-secondary {
-    
-//     border-color: #6f42c1;
-//     background-color: #6f42c1;
-// }
-// }
+.form-border-dark {
+  .form-control {
+    border: 1px solid #6c757d !important;
+  }
+  .form-control:focus {
+    // border: #007bff;
+    // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    //   0 0 8px rgba(0,123,255, 0.6);
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+  }
+
+  .input-group-text {
+    border: 1px solid #6c757d !important;
+  }
+  .custom-file-label {
+    border: 1px solid #6c757d !important;
+  }
+}

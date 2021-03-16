@@ -43,8 +43,8 @@
     />
   </head>
 
-  <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+  <body class="hold-transition sidebar-mini layout-fixed ">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -830,8 +830,8 @@
         <section class="content">
           <div class="container-fluid">
             <!-- Purchase card -->
-            <div class="card card-purple pb-0">
-              <div class="card-header p-2">
+            <div class="card card-success pb-0">
+              <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">Purchase</h3>
                 <div class="card-tools">
                   <button
@@ -865,7 +865,7 @@
                   <div class="col-md-3 col-sm-4 pt-4">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-success"
                     >
                       Add New
                     </button>
@@ -1043,7 +1043,6 @@
                       </select>
                     </div>
                   </div>
-
                   <!-- PO NO -->
                   <div class="col-md-3 col-sm-4">
                     <div class="form-group">
@@ -1056,7 +1055,6 @@
                       />
                     </div>
                   </div>
-
                   <!-- PO Date -->
                   <div class="col-md-3 col-sm-4">
                     <form>
@@ -1090,7 +1088,6 @@
                       </div>
                     </form>
                   </div>
-
                   <!-- Source GRN No. -->
                   <div class="col-md-3 col-sm-4">
                     <div class="form-group">
@@ -1130,7 +1127,7 @@
                     </div>
                   </div>
                   <!-- Upload File -->
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-8 col-sm-8">
                     <form action="" role="form">
                       <div class="form-group">
                         <label for="exampleInputFile">Upload File</label>
@@ -1153,15 +1150,15 @@
                           </div>
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-outline-secondary">
+                      <button type="submit" class="btn btn-success">
                         Submit
                       </button>
                     </form>
                   </div>
                 </div>
                 <!-- Expand for LC option -->
-                <div class="mt-4 card card-purple pb-0 collapsed-card">
-                  <div class="card-header p-2">
+                <div class="mt-4 card card-success pb-0 collapsed-card">
+                  <div class="card-header">
                     <h3 class="card-title h3 font-weight-bold">
                       <button
                         type="button"
@@ -1281,7 +1278,7 @@
             </div>
             <!-- Item Details card -->
             <div class="card card-default pb-0">
-              <div class="card-header p-2">
+              <div class="card-header">
                 <h3 class="card-title h3">Item Details</h3>
 
                 <div class="card-tools">
@@ -1469,15 +1466,15 @@
                   <div class="col-md-3 col-lg-2 col-sm-4">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-success"
                     >
                       Add
                     </button>
                   </div>
                 </div>
                 <!-- Expand for VAT option + -->
-                <div class="card card-purple pb-0 collapsed-card">
-                  <div class="card-header p-2">
+                <div class="card card-success pb-0 collapsed-card">
+                  <div class="card-header">
                     <h3 class="card-title h3 font-weight-bold">
                       <button
                         type="button"
@@ -1764,7 +1761,7 @@
                       <div class="col-md-4 col-lg-2 col-sm-6 pt-4">
                         <button
                           type="button"
-                          class="mb-3 btn btn-block btn-outline-secondary"
+                          class="mb-3 btn btn-block btn-success"
                         >
                           Add
                         </button>
@@ -1778,8 +1775,8 @@
             <div class="card pb-0">
               <div class="card-body p-0">
                 <div style="overflow-x: auto">
-                  <table class="table table-bordered table-sm h6">
-                    <thead class="bg-purple">
+                  <table class="table table-bordered table h6">
+                    <thead class="bg-success">
                       <tr class="text-center">
                         <th style="width: 5%">SL</th>
                         <th style="width: 10%">Product Name</th>
@@ -1833,10 +1830,10 @@
               <div class="card-body">
                 <!-- form row -->
                 <div class="row">
-                  <div class="col-md-6 col-sm-12">
+                  <div class="col-md-12 col-sm-12 col-xl-6">
                     <!-- Special Discount(%) -->
                     <div class="row">
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-8 col-xl-8">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1847,24 +1844,24 @@
                             </label>
                             <div class="col-sm-5">
                               <input
-                                type="password"
+                                type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="Password"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-4 col-xl-4">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
                               <input
-                                type="password"
+                                type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="Password"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1910,19 +1907,19 @@
                     </div>
                     <!-- Mode of Payment -->
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-5 col-xl-4">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
                               Mode of Payment
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-sm-7 col-xl-8">
                         <!-- radio -->
                         <div class="form-group">
                           <div
@@ -2097,7 +2094,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-12">
+                  <div class="col-md-12 col-sm-12 col-xl-6">
                     <!-- Total Amount -->
                     <div class="row">
                       <div class="col-md-6 col-sm-6">
@@ -2129,19 +2126,19 @@
                     </div>
                     <!-- Additional Discount(TK) -->
                     <div class="row">
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-6 col-xl-8">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-xl-12 col-form-label"
                             >
                               Additional Discount(TK)
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-6 col-xl-4">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -2158,16 +2155,16 @@
                     </div>
                     <!-- Overhead Cost(%) -->
                     <div class="row">
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-8 col-xl-8">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-5 col-form-label"
+                              class="col-sm-8 col-xl-8 col-form-label"
                             >
                               Overhead Cost(%)
                             </label>
-                            <div class="col-sm-7">
+                            <div class="col-sm-4 col-xl-4">
                               <input
                                 type="text"
                                 class="form-control"
@@ -2178,7 +2175,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-4 col-xl-4">
                         <form>
                           <div class="form-group row">
                             <label
@@ -2259,7 +2256,7 @@
                     </div>
                     <!-- Check Issue Date -->
                     <div class="row" id="issuedate" style="display: none">
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-6 col-xl-7">
                         <form>
                           <div class="form-group row">
                             <label
@@ -2271,7 +2268,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-6 col-sm-6 col-xl-5">
                         <form>
                           <div class="form-group">
                             <div
@@ -2389,26 +2386,26 @@
                 </div>
                 <!-- button row -->
                 <div class="row justify-content-end">
-                  <div class="col-sm-3 col-md-2 col-xl-1">
+                  <div class="col-sm-3 col-md-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary"
+                      class="mb-2 btn btn-block btn-success"
                     >
                       Save
                     </button>
                   </div>
-                  <div class="col-sm-3 col-md-2 col-xl-1">
+                  <div class="col-sm-3 col-md-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-danger"
+                      class="mb-2 btn btn-block btn-danger"
                     >
                       Cancel
                     </button>
                   </div>
-                  <div class="col-sm-3 col-md-2 col-xl-1">
+                  <div class="col-sm-3 col-md-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-success"
                     >
                       Post
                     </button>

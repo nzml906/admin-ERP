@@ -30526,10 +30526,6 @@ a.text-muted:hover {
   color: #ffffff;
 }
 
-body {
-  zoom: 85%;
-}
-
 .card-body.p-0 .table tbody > tr > td:first-of-type,
 .card-body.p-0 .table tbody > tr > th:first-of-type,
 .card-body.p-0 .table thead > tr > td:first-of-type,
@@ -30542,5 +30538,22 @@ body {
 .card-body.p-0 .table thead > tr > td:last-of-type,
 .card-body.p-0 .table thead > tr > th:last-of-type {
   padding-right: 0.3rem;
+}
+
+.form-border-dark .form-control {
+  border: 1px solid #6c757d !important;
+}
+
+.form-border-dark .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-border-dark .input-group-text {
+  border: 1px solid #6c757d !important;
+}
+
+.form-border-dark .custom-file-label {
+  border: 1px solid #6c757d !important;
 }
 /*# sourceMappingURL=adminlte.css.map */
