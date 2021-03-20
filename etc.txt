@@ -4,7 +4,7 @@ http://localhost:3000/balance-sheet.html
 http://localhost:3000/product-setup.html
 http://localhost:3000/mushak-6.1.html **
 http://localhost:3000/mushak-6.3.html **
-http://localhost:3000/mushak-6.7.html
+http://localhost:3000/mushak-6.7.html **
 http://localhost:3000/mushak-6.6.html
 http://localhost:3000/mushak-6.8.html
 http://localhost:3000/Company-Information.html

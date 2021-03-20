@@ -44,7 +44,7 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -215,7 +215,6 @@
           </li>
         </ul>
       </nav>
-
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
@@ -224,7 +223,7 @@
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           />
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
@@ -824,14 +823,13 @@
           <!-- /.sidebar-menu -->
         </div>
       </aside>
-
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
             <!-- Customer Wise Sales Return -->
-            <div class="card card-warning">
+            <div class="card card-success pb-0">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Customer Wise Sales Return
@@ -845,22 +843,14 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
+              <div class="card-body pb-0">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>Customer</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -874,7 +864,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>INV No</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -888,7 +878,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>Baddebts Goods Godown</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -902,7 +892,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>Currency</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -916,7 +906,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>Vehicle Type</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -930,7 +920,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>Intact Goods Godown</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -957,33 +947,27 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
+              <div class="card-body pb-0">
                 <div class="row">
-                  <div class="col-md-1">
+                  <!-- Code -->
+                  <div class="col-md-2 col-xl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Code</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-2">
+                  <!-- Product -->
+                  <div class="col-md-2 col-xl-2">
                     <div class="form-group">
                       <label>Product</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -994,10 +978,11 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- UOM -->
+                  <div class="col-md-2 col-xl-1">
                     <div class="form-group">
                       <label>UOM</label>
-                      <select class="form-control select2" style="width: 100%;">
+                      <select class="form-control select2" style="width: 100%">
                         <option selected="selected">Alabama</option>
                         <option>Alaska</option>
                         <option>California</option>
@@ -1008,28 +993,31 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- Quantity -->
+                  <div class="col-md-2 col-xl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Quantity</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- Rate -->
+                  <div class="col-md-2 col-xl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Rate</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
+                  <!-- Total Amount Without VAT -->
                   <div class="col-md-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">
@@ -1039,43 +1027,47 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- %Sub.Duty -->
+                  <div class="col-md-2 col-xxl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">%Sub.Duty</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- SD Amount -->
+                  <div class="col-md-2 col-xxl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">SD Amount</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- VAT -->
+                  <div class="col-md-2 col-xl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">VAT</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
+                  <!-- Total Amount With VAT & SD -->
                   <div class="col-md-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">
@@ -1085,193 +1077,184 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- Deduction -->
+                  <div class="col-md-2 col-xxl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Deduction</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- Deduction % -->
+                  <div class="col-md-2 col-xxl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Deduction %</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-1">
+                  <!-- Amount -->
+                  <div class="col-md-2 col-xxl-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Amount</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
                 </div>
-
                 <div class="row justify-content-center">
-                  <div class="col-lg-1">
+                  <div class="col-md-2 col-xxl-1">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="mb-3 btn btn-block btn-success"
                     >
                       Next
                     </button>
                   </div>
-
-                  <div class="col-lg-1">
-                    <button
-                      type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
-                    >
+                  <div class="col-md-2 col-xxl-1">
+                    <button type="button" class="mb-3 btn btn-block btn-danger">
                       Cancel
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Product List card -->
-            <div class="card">
-              <div class="card-body">
-                <table class="table table-bordered h6">
-                  <thead class="bg-green">
-                    <tr>
-                      <th style="width: 5%;">SL</th>
-                      <th style="width: 10%;">Product Name</th>
-                      <th style="width: 10%;">Category</th>
-                      <th style="width: 10%;">Brand</th>
-                      <th style="width: 10%;">Baddepts</th>
-                      <th style="width: 10%;">Return Qty</th>
-                      <th style="width: 10%;">Rate</th>
+            <!-- Table List card -->
+            <div class="card pb-0">
+              <div class="card-body p-0">
+                <div style="overflow-x: auto">
+                  <table class="table table-bordered table-sm h6">
+                    <thead class="bg-success">
+                      <tr class="text-center">
+                        <th style="width: 5%">SL</th>
+                        <th style="width: 10%">Product Name</th>
+                        <th style="width: 10%">Category</th>
+                        <th style="width: 10%">Brand</th>
+                        <th style="width: 10%">Baddepts</th>
+                        <th style="width: 10%">Return Qty</th>
+                        <th style="width: 10%">Rate</th>
+                        <th style="width: 10%">Amount</th>
+                        <th style="width: 10%">Option</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
 
-                      <th style="width: 10%;">Amount</th>
-                      <th style="width: 5%;">Action</th>
-                      <th style="width: 5%;">Delete</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-primary btn-xs"
-                        >
-                          Edit
-                        </button>
-                      </td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-danger btn-xs"
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-primary btn-xs"
-                        >
-                          Edit
-                        </button>
-                      </td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-danger btn-xs"
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                        <td>00 Cr</td>
+
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span
+                              style="font-size: 1.2em; color: Mediumslateblue"
+                            >
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.2em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Table form card imported -->
+            <div class="card pb-0">
+              <div class="card-body">
                 <!-- form row -->
-                <div class="row mt-3">
-                  <div class="col-md-6">
+                <div class="row justify-content-between">
+                  <div class="col-md-12 col-sm-12 col-xl-4">
+                    <!-- Return Date -->
                     <div class="row">
-                      <!-- Return Date -->
-                      <div class="col-md-4">
+                      <div class="col-md-6 col-sm-6 col-xl-7">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-10 col-form-label"
+                              class="col-sm-7 col-form-label"
                             >
                               Return Date
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-7">
-                        <!-- Sales Date -->
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="far fa-calendar-alt"></i>
-                              </span>
+                      <div class="col-md-6 col-sm-6 col-xl-5">
+                        <form>
+                          <div class="form-group">
+                            <div
+                              class="input-group date"
+                              id="reservationdate"
+                              data-target-input="nearest"
+                            >
+                              <div
+                                class="input-group-append"
+                                data-target="#reservationdate"
+                                data-toggle="datetimepicker"
+                              >
+                                <div
+                                  style="border: none !important"
+                                  class="input-group-text"
+                                >
+                                  <i class="fa fa-calendar"></i>
+                                </div>
+                              </div>
+                              <input
+                                type="text"
+                                class="form-control datetimepicker-input"
+                                data-target="#reservationdate"
+                              />
                             </div>
-                            <input
-                              type="text"
-                              class="form-control float-right"
-                              id="received_date"
-                            />
                           </div>
-                          <!-- /.input group -->
-                        </div>
+                        </form>
                       </div>
                     </div>
+                    <!-- Total Sales Return Amount -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
                               Total Sales Return Amount
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                               <input
                                 type="text"
                                 class="form-control"
@@ -1283,59 +1266,61 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Deduction(%) -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-8 col-xl-8">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
                               class="col-sm-7 col-form-label"
                             >
-                              Deduction (%)
+                              Deduction(%)
                             </label>
                             <div class="col-sm-5">
                               <input
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-4 col-xl-4">
                         <form>
                           <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                               <input
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
                         </form>
                       </div>
                     </div>
+                    <!-- Note -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
                               Note
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                               <input
                                 type="text"
                                 class="form-control"
@@ -1348,9 +1333,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12 col-sm-12 col-xl-4">
+                    <!-- Total Amount -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1362,7 +1348,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1377,20 +1363,21 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Total Baddepts Amount -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
-                              Total Baddebts Amount
+                              Total Baddepts Amount
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1405,20 +1392,21 @@
                         </form>
                       </div>
                     </div>
+                    <!-- Net Payble Amount -->
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-12 col-form-label"
                             >
-                              Net Payable Amount
+                              Net Payble Amount
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1433,13 +1421,17 @@
                         </form>
                       </div>
                     </div>
-                    <div class="row justify-content-end">
-                      <div class="col-md-3">
-                        <button type="button" class="btn btn-block btn-primary">
-                          Save
-                        </button>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+                <!-- button row -->
+                <div class="row justify-content-end">
+                  <div class="col-sm-3 col-md-2">
+                    <button
+                      type="button"
+                      class="mb-2 btn btn-block btn-success"
+                    >
+                      Save
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1462,7 +1454,7 @@
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-      $.widget.bridge('uibutton', $.ui.button)
+      $.widget.bridge("uibutton", $.ui.button);
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1503,76 +1495,80 @@
         // });
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { placeholder: 'mm/dd/yyyy' })
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
         //Money Euro
-        $('[data-mask]').inputmask()
+        $("[data-mask]").inputmask();
 
         //Date range picker
-        $('#delivery_date').daterangepicker()
-        $('#received_date').daterangepicker()
-        $('#po_date').daterangepicker()
-        $('#lc_date').daterangepicker()
+        $("#delivery_date").daterangepicker();
+        $("#received_date").daterangepicker();
+        $("#po_date").daterangepicker();
+        $("#lc_date").daterangepicker();
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
+        $("#reservationtime").daterangepicker({
           timePicker: true,
           timePickerIncrement: 30,
           locale: {
-            format: 'MM/DD/YYYY hh:mm A',
+            format: "MM/DD/YYYY hh:mm A",
           },
-        })
+        });
         //Date range as a button
-        $('#daterange-btn').daterangepicker(
+        $("#daterange-btn").daterangepicker(
           {
             ranges: {
               Today: [moment(), moment()],
               Yesterday: [
-                moment().subtract(1, 'days'),
-                moment().subtract(1, 'days'),
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
               ],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [
-                moment().startOf('month'),
-                moment().endOf('month'),
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
               ],
-              'Last Month': [
-                moment().subtract(1, 'month').startOf('month'),
-                moment().subtract(1, 'month').endOf('month'),
+              "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month"),
               ],
             },
-            startDate: moment().subtract(29, 'days'),
+            startDate: moment().subtract(29, "days"),
             endDate: moment(),
           },
           function (start, end) {
-            $('#reportrange span').html(
-              start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'),
-            )
-          },
-        )
+            $("#reportrange span").html(
+              start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+          }
+        );
 
         //Timepicker
-        $('#timepicker').datetimepicker({
-          format: 'LT',
-        })
+        $("#timepicker").datetimepicker({
+          format: "LT",
+        });
+
+        $("#returndate").datetimepicker({
+          format: "L",
+        });
 
         //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
+        $(".duallistbox").bootstrapDualListbox();
 
         //Colorpicker
-        $('.my-colorpicker1').colorpicker()
+        $(".my-colorpicker1").colorpicker();
         //color picker with addon
-        $('.my-colorpicker2').colorpicker()
+        $(".my-colorpicker2").colorpicker();
 
-        $('.my-colorpicker2').on('colorpickerChange', function (event) {
-          $('.my-colorpicker2 .fa-square').css('color', event.color.toString())
-        })
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
 
-        $('input[data-bootstrap-switch]').each(function () {
-          $(this).bootstrapSwitch('state', $(this).prop('checked'))
-        })
-      })
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
+      });
     </script>
     <!-- InputMask -->
     <script src="../../plugins/moment/moment.min.js"></script>
