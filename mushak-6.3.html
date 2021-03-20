@@ -44,7 +44,7 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -831,8 +831,8 @@
         <section class="content">
           <div class="container-fluid">
             <!-- Sales order card -->
-            <div class="card card-purple pb-0">
-              <div class="card-header p-2">
+            <div class="card card-success pb-0">
+              <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">Sales Order</h3>
 
                 <div class="card-tools">
@@ -848,7 +848,7 @@
               <div class="card-body pb-0">
                 <div class="row">
                   <!-- Work Order No. -->
-                  <div class="col-sm-12 col-md-3 col-lg-2">
+                  <div class="col-sm-12 col-md-3 col-lg-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Work Order No.</label>
                       <input
@@ -860,18 +860,18 @@
                     </div>
                   </div>
                   <!--          spacer              -->
-                  <div class="d-none d-md-block col-md-1 col-lg-2"></div>
+                  <div class="d-none d-md-block col-md-1 col-lg-1"></div>
                   <!-- Customer -->
                   <div class="col-sm-4 col-md-3 col-lg-3">
                     <form>
                       <div class="form-group row">
                         <label
                           for="inputPassword"
-                          class="col-sm-5 col-lg-5 col-form-label"
+                          class="col-sm-7 col-lg-7 col-xl-5 col-form-label"
                         >
                           Customer
                         </label>
-                        <div class="col-sm-7 col-lg-7">
+                        <div class="col-sm-5 col-lg-5 col-xl-7">
                           <input
                             type="text"
                             class="form-control"
@@ -903,7 +903,7 @@
                   <div class="col-sm-4 col-md-3 col-lg-3">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="mb-3 btn btn-block btn-success"
                     >
                       Load Undelivery
                     </button>
@@ -974,7 +974,7 @@
                             data-target="#expirydate"
                             data-toggle="datetimepicker"
                           >
-                            <div class="input-group-text">
+                            <div style="border: none !important" class=" input-group-text">
                               <i class="fa fa-calendar"></i>
                             </div>
                           </div>
@@ -1022,7 +1022,7 @@
                             data-target="#delivery_"
                             data-toggle="datetimepicker"
                           >
-                            <div class="input-group-text">
+                            <div style="border: none !important" class="input-group-text">
                               <i class="fa fa-calendar"></i>
                             </div>
                           </div>
@@ -1100,8 +1100,8 @@
               </div>
             </div>
             <!-- Sales Details card -->
-            <div class="card card-default">
-              <div class="card-header p-2">
+            <div class="card card-default pb-0">
+              <div class="card-header">
                 <h3 class="card-title h3">Sales Details</h3>
                 <div class="card-tools">
                   <button
@@ -1117,7 +1117,7 @@
                 <!-- form row -->
                 <div class="row">
                   <!-- SL -->
-                  <div class="col-md-2 col-sm-3">
+                  <div class="col-md-1 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">SL</label>
                       <input
@@ -1182,7 +1182,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-2 col-sm-3">
+                  <div class="col-xl-2 col-md-3 col-sm-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Order Quantity</label>
                       <input
@@ -1240,27 +1240,27 @@
                 </div>
                 <!-- next cancel -->
                 <div class="row justify-content-center mb-3">
-                  <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
+                  <div class="col-sm-4 col-md-3 col-lg-2">
                     <button
                       type="button"
-                      class="mb-2 btn btn-block btn-outline-secondary"
+                      class="mb-2 btn btn-block btn-success"
                     >
                       Next
                     </button>
                   </div>
 
-                  <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
+                  <div class="col-sm-4 col-md-3 col-lg-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-danger"
                     >
                       Cancel
                     </button>
                   </div>
                 </div>
                 <!-- Expanded menu for mushak 6.3 -->
-                <div class="card card-purple pb-0 collapsed-card">
-                  <div class="card-header p-2">
+                <div class="card card-success pb-0 collapsed-card">
+                  <div class="card-header">
                     <h3 class="card-title h3 font-weight-bold">
                       <button
                         type="button"
@@ -1420,19 +1420,19 @@
                     </div>
                     <!-- next cancel -->
                     <div class="row justify-content-center">
-                      <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
+                      <div class="col-sm-4 col-md-3 col-lg-2">
                         <button
                           type="button"
-                          class="mb-2 btn btn-block btn-outline-secondary"
+                          class="mb-2 btn btn-block btn-success"
                         >
                           Next
                         </button>
                       </div>
 
-                      <div class="col-sm-4 col-md-3 col-lg-2 col-xl-1">
+                      <div class="col-sm-4 col-md-3 col-lg-2">
                         <button
                           type="button"
-                          class="btn btn-block btn-outline-secondary"
+                          class="btn btn-block btn-danger"
                         >
                           Cancel
                         </button>
@@ -1447,7 +1447,7 @@
               <div class="card-body p-0">
                 <div style="overflow-x: auto">
                   <table class="table table-bordered table-sm h6">
-                    <thead class="bg-purple">
+                    <thead class="bg-success">
                       <tr class="text-center">
                         <th style="width: 5%">SL</th>
                         <th style="width: 10%">Product Name</th>
@@ -1504,7 +1504,7 @@
                   <div class="col-md-12 col-xl-6 col-sm-12">
                     <!-- DD Commission (%) -->
                     <div class="row">
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-8 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1524,7 +1524,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-4 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1541,7 +1541,7 @@
                     </div>
                     <!-- Exclusive Discount (%) -->
                     <div class="row">
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-8 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1561,7 +1561,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6 col-sm-6">
+                      <div class="col-md-4 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1638,7 +1638,7 @@
                     </div>
                     <!-- Additional Discount (%) -->
                     <div class="row">
-                      <div class="col-md-8 col-sm-6">
+                      <div class="col-md-9 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <label
@@ -1658,7 +1658,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-4 col-sm-6">
+                      <div class="col-md-3 col-sm-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -1680,7 +1680,7 @@
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-sm-7 col-xl-12 col-form-label"
                             >
                               Total Receivable
                             </label>
@@ -1706,26 +1706,26 @@
                 </div>
                 <!-- button row -->
                 <div class="row justify-content-end">
-                  <div class="col-sm-3 col-md-2">
+                  <div class="col-sm-3 col-md-2 col-lg-3 col-xl-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary mb-2"
+                      class="btn btn-block btn-success mb-2"
                     >
                       Get Pass
                     </button>
                   </div>
-                  <div class="col-sm-3 col-md-2">
+                  <div class="col-sm-3 col-md-2 col-lg-3 col-xl-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-success mb-2"
+                      class="btn btn-block btn-success mb-2"
                     >
                       Save & Post
                     </button>
                   </div>
-                  <div class="col-sm-3 col-md-2">
+                  <div class="col-sm-3 col-md-2 col-lg-3 col-xl-2">
                     <button
                       type="button"
-                      class="btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-success"
                     >
                       Post
                     </button>
