@@ -43,7 +43,7 @@
     />
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -829,8 +829,8 @@
         <section class="content">
           <div class="container-fluid">
             <!-- Preparation Batch Setup card -->
-            <div class="card card-purple pb-0">
-              <div class="card-header p-2">
+            <div class="card card-success pb-0">
+              <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Preparation Batch Setup
                 </h3>
@@ -846,20 +846,20 @@
                 </div>
               </div>
               <div class="card-body pb-0">
-                <div class="row">
-                  <div class="col-md-6">
+                <!-- Batch name,Finished Goods -->
+                <div class="row justify-content-between">
+                  <div class="col-md-4 col-lg-3">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Batch name</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
-
-                  <div class="col-md-6">
+                  <div class="col-md-4 col-lg-3">
                     <div class="form-group">
                       <label>Finished Goods</label>
                       <select class="form-control select2" style="width: 100%">
@@ -874,10 +874,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- /.row -->
-
-                <div class="row">
-                  <div class="col-md-6">
+                <!-- Currency,Metarials Out Stock -->
+                <div class="row justify-content-between">
+                  <div class="col-md-4 col-lg-3">
                     <div class="form-group">
                       <label>Currency</label>
                       <select class="form-control select2" style="width: 100%">
@@ -891,8 +890,7 @@
                       </select>
                     </div>
                   </div>
-
-                  <div class="col-md-6">
+                  <div class="col-md-4 col-lg-3">
                     <div class="form-group">
                       <label>Metarials Out Stock</label>
                       <select class="form-control select2" style="width: 100%">
@@ -907,12 +905,11 @@
                     </div>
                   </div>
                 </div>
-                <!-- /.row -->
               </div>
             </div>
             <!-- Raw Metarials card -->
             <div class="card card-default pb-0">
-              <div class="card-header p-2">
+              <div class="card-header">
                 <h3 class="card-title h3">Raw Metarials</h3>
                 <div class="card-tools">
                   <button
@@ -927,7 +924,7 @@
               <div class="card-body pb-0">
                 <!-- form row -->
                 <div class="row">
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label>Metarials Name</label>
                       <select class="form-control select2" style="width: 100%">
@@ -942,7 +939,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">
                         Day Qty (gram per pcs)
@@ -951,24 +948,24 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Day Wastage (%)</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">
                         Night Qty (gram per pcs)
@@ -977,36 +974,36 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Night Wastage (%)</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Total Day Qty (kg)</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-3 col-sm-4">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">
                         Total Night Qty (kg)
@@ -1015,27 +1012,24 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
                 </div>
-                <!-- Next Cancel -->
-                <div class="row justify-content-center">
-                  <div class="col-sm-3 col-lg-2">
+                <!-- next cancel -->
+                <div class="row justify-content-center mb-3">
+                  <div class="col-sm-4 col-md-3 col-lg-2">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="mb-2 btn btn-block btn-success"
                     >
                       Next
                     </button>
                   </div>
 
-                  <div class="col-sm-3 col-lg-2">
-                    <button
-                      type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
-                    >
+                  <div class="col-sm-4 col-md-3 col-lg-2">
+                    <button type="button" class="btn btn-block btn-danger">
                       Cancel
                     </button>
                   </div>
@@ -1045,9 +1039,10 @@
             <!-- Preview save card-->
             <div class="card">
               <div class="card-body p-0">
+                <!-- table -->
                 <div style="overflow-x: auto">
                   <table class="table table-bordered table-sm h6">
-                    <thead class="bg-purple">
+                    <thead class="bg-success">
                       <tr class="text-center">
                         <th style="width: 5%">SL</th>
                         <th style="width: 10%">Product Name</th>
@@ -1091,11 +1086,12 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-3 col-lg-2">
+                <!-- save -->
+                <div class="row justify-content-center mb-3">
+                  <div class="col-sm-4 col-md-3 col-lg-2">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="mb-2 btn btn-block btn-success"
                     >
                       Save
                     </button>
@@ -1104,8 +1100,8 @@
               </div>
             </div>
             <!-- Mushak 4.3 -->
-            <div class="card card-purple collapsed-card p-0">
-              <div class="card-header p-2">
+            <div class="card card-success collapsed-card p-0">
+              <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   <button
                     type="button"
@@ -1121,7 +1117,7 @@
                 <!-- mushak 4.3 form -->
                 <div class="row justify-content-center">
                   <!-- left col -->
-                  <div class="col-md-12 col-xl-6">
+                  <div class=" col-xxl-7">
                     <div class="row">
                       <!-- SL No. -->
                       <div class="col-md-4">
@@ -1136,7 +1132,7 @@
                             <div class="col-sm-6">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1172,13 +1168,13 @@
                                     data-target="#sharepurchase"
                                     data-toggle="datetimepicker"
                                   >
-                                    <div class="input-group-text">
+                                    <div style="border: none !important" class="input-group-text">
                                       <i class="fa fa-calendar"></i>
                                     </div>
                                   </div>
                                   <input
                                     type="text"
-                                    class="form-control form-control-sm datetimepicker-input"
+                                    class="form-control datetimepicker-input"
                                     data-target="#sharepurchase"
                                   />
                                 </div>
@@ -1192,7 +1188,7 @@
                         <form>
                           <div class="form-group">
                             <select
-                              class="form-control form-control-sm select2"
+                              class="form-control select2"
                               style="width: 100%"
                             >
                               <option selected="selected">
@@ -1221,7 +1217,7 @@
                             <div class="col-sm-9 col-xl-7">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1242,7 +1238,7 @@
                             <div class="col-sm-9">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1263,7 +1259,7 @@
                             <div class="col-sm-6">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1284,7 +1280,7 @@
                             <div class="col-sm-9 col-xl-5">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1305,7 +1301,7 @@
                             <div class="col-sm-6">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1326,7 +1322,7 @@
                             <div class="col-sm-9 col-xl-5">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1347,7 +1343,7 @@
                             <div class="col-sm-9">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1383,13 +1379,13 @@
                                     data-target="#sharepurchase2"
                                     data-toggle="datetimepicker"
                                   >
-                                    <div class="input-group-text">
+                                    <div style="border: none !important" class="input-group-text">
                                       <i class="fa fa-calendar"></i>
                                     </div>
                                   </div>
                                   <input
                                     type="text"
-                                    class="form-control form-control-sm datetimepicker-input"
+                                    class="form-control datetimepicker-input"
                                     data-target="#sharepurchase2"
                                   />
                                 </div>
@@ -1412,7 +1408,7 @@
                             <div class="col-sm-6">
                               <input
                                 type="text"
-                                class="form-control form-control-sm"
+                                class="form-control"
                                 id="inputPassword"
                                 placeholder=""
                               />
@@ -1423,7 +1419,7 @@
                     </div>
                   </div>
                   <!-- right col -->
-                  <div class="col-md-12 col-xl-5">
+                  <div class=" col-xxl-5">
                     <form>
                       <!-- SD Applicable Current Price -->
                       <div class="form-group row">
@@ -1436,7 +1432,7 @@
                         <div class="col-sm-7 col-xl-6">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1453,7 +1449,7 @@
                         <div class="col-sm-7 col-xl-6">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1470,7 +1466,7 @@
                         <div class="col-sm-7 col-xl-6">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1487,7 +1483,7 @@
                         <div class="col-sm-7 col-xl-6">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1504,7 +1500,7 @@
                         <div class="col-sm-7 col-xl-6">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1521,7 +1517,7 @@
                         <div class="col-sm-7">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1538,7 +1534,7 @@
                         <div class="col-sm-7">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1555,7 +1551,7 @@
                         <div class="col-sm-7">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1577,7 +1573,7 @@
                         <div class="col-sm-7">
                           <input
                             type="text"
-                            class="form-control form-control-sm"
+                            class="form-control"
                             id="inputPassword"
                             placeholder=""
                           />
@@ -1592,7 +1588,6 @@
                     </button>
                   </div>
                 </div>
-
                 <!-- mushak 4.3 table -->
                 <div class="row">
                   <div class="col-sm-12">
@@ -1603,7 +1598,7 @@
                             class="table table-bordered table-sm h6 text-center"
                           >
                             <thead>
-                              <tr class="bg-purple">
+                              <tr class="bg-success">
                                 <th colspan="1">Item Code</th>
                                 <th colspan="1">Item Description</th>
                                 <th colspan="1">Unit</th>
@@ -1659,38 +1654,26 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="row mt-3">
+                <!-- buttons -->
+                <div class="row mt-2">
                   <div class="col-md-2">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
+                    <button type="button" class="btn btn-block btn-success mb-2">
                       Preview
                     </button>
                   </div>
                   <div class="col-md-4"></div>
                   <div class="col-md-2">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
+                    <button type="button" class="btn btn-block btn-success mb-2">
                       Preview
                     </button>
                   </div>
                   <div class="col-md-2">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
+                    <button type="button" class="btn btn-block btn-success mb-2">
                       Preview
                     </button>
                   </div>
                   <div class="col-md-2">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
+                    <button type="button" class="btn btn-block btn-success">
                       Preview
                     </button>
                   </div>

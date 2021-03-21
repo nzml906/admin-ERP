@@ -1,4 +1,4 @@
-http://localhost:3000/batch-setup.html *
+http://localhost:3000/batch-setup.html **
 http://localhost:3000/batch-wise-production.html
 http://localhost:3000/balance-sheet.html
 http://localhost:3000/product-setup.html **
