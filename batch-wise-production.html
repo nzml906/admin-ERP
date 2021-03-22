@@ -43,7 +43,7 @@
     />
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -824,7 +824,7 @@
         <section class="content">
           <div class="container-fluid">
             <!-- Batch Wise Production card -->
-            <div class="card card-secondary">
+            <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Batch Wise Production
@@ -847,10 +847,9 @@
                   </button>
                 </div>
               </div>
-
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6">
+              <div class="card-body pb-0">
+                <div class="row justify-content-between">
+                  <div class="col-md-4">
                     <div class="form-group">
                       <label>Production Factory</label>
                       <select class="form-control select2" style="width: 100%">
@@ -888,25 +887,33 @@
                       </select>
                     </div>
                   </div>
-
-                  <div class="col-md-6">
-                    <!-- Date range -->
+                  <div class="col-md-4">
+                    <!-- Production Date -->
                     <div class="form-group">
-                      <label>Production Date</label>
-
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="far fa-calendar-alt"></i>
-                          </span>
+                      <label> Production Date </label>
+                      <div
+                        class="input-group date"
+                        id="productiondate"
+                        data-target-input="nearest"
+                      >
+                        <div
+                          class="input-group-append"
+                          data-target="#productiondate"
+                          data-toggle="datetimepicker"
+                        >
+                          <div
+                            style="border: none !important"
+                            class="input-group-text"
+                          >
+                            <i class="fa fa-calendar"></i>
+                          </div>
                         </div>
                         <input
                           type="text"
-                          class="form-control float-right"
-                          id="reservation"
+                          class="form-control datetimepicker-input"
+                          data-target="#productiondate"
                         />
                       </div>
-                      <!-- /.input group -->
                     </div>
                     <div class="form-group">
                       <label>Production Machine</label>
@@ -937,7 +944,7 @@
               </div>
             </div>
             <!-- Production details card -->
-            <div class="card card-default">
+            <div class="card card-default pb-0">
               <div class="card-header">
                 <h3 class="card-title h3">Production Details</h3>
 
@@ -949,19 +956,12 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
+              <div class="card-body pb-0">
+                <!-- form row -->
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label>Finish Goods Name</label>
                       <select class="form-control select2" style="width: 100%">
@@ -976,7 +976,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label>Batch Name</label>
                       <select class="form-control select2" style="width: 100%">
@@ -991,7 +991,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1"
                         >Used Qty (gram/pcs)</label
@@ -1000,24 +1000,24 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Wastage (%)</label>
                       <input
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1"
                         >Production Qty (pcs/day)</label
@@ -1026,12 +1026,12 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xxl-3 col-xxxxl-2">
                     <div class="form-group">
                       <label for="exampleInputEmail1"
                         >Total Used Qty (kg/day)</label
@@ -1040,131 +1040,95 @@
                         type="email"
                         class="form-control"
                         id="exampleInputEmail1"
-                        placeholder="Enter email"
+                        placeholder=""
                       />
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Next Cancel -->
-              <div class="row justify-content-center">
-                <div class="col-lg-1">
-                  <button
-                    type="button"
-                    class="mb-3 btn btn-block btn-outline-secondary"
-                  >
-                    Next
-                  </button>
-                </div>
-
-                <div class="col-lg-1">
-                  <button
-                    type="button"
-                    class="mb-3 btn btn-block btn-outline-secondary"
-                  >
-                    Cancel
-                  </button>
+                <!-- next cancel -->
+                <div class="row justify-content-center mb-3">
+                  <div class="col-sm-4 col-md-3 col-lg-2 col-xxxl-1">
+                    <button
+                      type="button"
+                      class="mb-2 btn btn-block btn-success"
+                    >
+                      Next
+                    </button>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-2 col-xxxl-1">
+                    <button type="button" class="btn btn-block btn-danger">
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Preview save card-->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body">
-                    <table class="table table-bordered h6">
-                      <thead class="bg-green">
-                        <tr>
-                          <th style="width: 5%">SL</th>
-                          <th style="width: 10%">Product Name</th>
-                          <th style="width: 10%">Machine Name</th>
-                          <th style="width: 10%">Shift</th>
-                          <th style="width: 10%">Used Qty (gram/pcs)</th>
-                          <th style="width: 10%">Wastage (%)</th>
-                          <th style="width: 10%">
-                            Production Quantity (pcs/day)
-                          </th>
-                          <th style="width: 10%">Total Used Qty (kg/day)</th>
-                          <th style="width: 5%">Action</th>
-                          <th style="width: 5%">Delete</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-block btn-info btn-xs"
+            <div class="card">
+              <div class="card-body p-0">
+                <!-- table -->
+                <div style="overflow-x: auto">
+                  <table class="table table-bordered table-sm h6">
+                    <thead class="bg-success">
+                      <tr class="text-center">
+                        <th style="width: 5%">SL</th>
+                        <th style="width: 10%">Product Name</th>
+                        <th style="width: 10%">Machine Name</th>
+                        <th style="width: 10%">Shift</th>
+                        <th style="width: 10%">Used Qty (gram/pcs)</th>
+                        <th style="width: 10%">Wastage (%)</th>
+                        <th style="width: 10%">
+                          Production Quantity (pcs/day)
+                        </th>
+                        <th style="width: 10%">Total Used Qty (kg/day)</th>
+                        <th style="width: 10%">Option</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="text-center">
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span
+                              style="font-size: 1.5em; color: Mediumslateblue"
                             >
-                              Edit
-                            </button>
-                          </td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-block btn-danger btn-xs"
-                            >
-                              X
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-block btn-info btn-xs"
-                            >
-                              Edit
-                            </button>
-                          </td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-block btn-danger btn-xs"
-                            >
-                              X
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- next cancel -->
+                <div class="row justify-content-center mb-3">
+                  <div class="col-sm-4 col-md-3 col-lg-2 col-xxxl-1">
+                    <button
+                      type="button"
+                      class="mb-2 btn btn-block btn-success"
+                    >
+                      Print
+                    </button>
                   </div>
-
-                  <!-- Print view -->
-                  <div class="row justify-content-center">
-                    <div class="col-lg-1">
-                      <button
-                        type="button"
-                        class="mb-3 btn btn-block btn-outline-secondary"
-                      >
-                        Print
-                      </button>
-                    </div>
-
-                    <div class="col-lg-1">
-                      <button
-                        type="button"
-                        class="mb-3 btn btn-block btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                    </div>
+                  <div class="col-sm-4 col-md-3 col-lg-2 col-xxxl-1">
+                    <button type="button" class="btn btn-block btn-danger">
+                      View
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1276,6 +1240,9 @@
         //Timepicker
         $("#timepicker").datetimepicker({
           format: "LT",
+        });
+        $("#productiondate").datetimepicker({
+          format: "L",
         });
 
         //Bootstrap Duallistbox
