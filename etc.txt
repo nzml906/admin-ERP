@@ -14,7 +14,7 @@ http://localhost:3000/Master-Initial-Setup.html
 http://localhost:3000/Opening-Stock-Mushak-6.1.html
 http://localhost:3000/Production-Receive.html
 http://localhost:3000/VAT-Source-informaion.html **
-http://localhost:3000/VDS-Received.html
+http://localhost:3000/VDS-Received.html **
 http://localhost:3000/Credit-Transfer.html
 http://localhost:3000/Installment-Recieve-Voucher.html
 http://localhost:3000/Installment-Sales.html
