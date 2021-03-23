@@ -44,7 +44,7 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -224,7 +224,7 @@
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           />
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
@@ -827,11 +827,10 @@
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-        <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
             <!-- Purchase Return/Debit Note/Mushak 6.8 -->
-            <div class="card card-warning">
+            <div class="card card-success pb-0">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Purchase Return/Debit Note/Mushak 6.8
@@ -845,21 +844,14 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-10">
-                    <div class="row justify-content-between">
-                      <div class="col-md-4">
+              <div class="card-body pb-0">
+                <div class="row justify-content-center">
+                  <div class="col-x13-10">
+                    <div class="row">
+                      <!-- Debit Note No Search -->
+                      <div class="col-sm-6">
                         <button
                           type="button"
                           class="mb-3 btn btn-block btn-outline-secondary"
@@ -867,7 +859,8 @@
                           Debit Note No Search
                         </button>
                       </div>
-                      <div class="col-md-4">
+                      <!-- Date Search -->
+                      <div class="col-sm-6">
                         <button
                           type="button"
                           class="mb-3 btn btn-block btn-outline-secondary"
@@ -875,24 +868,22 @@
                           Date Search
                         </button>
                       </div>
-                    </div>
-
-                    <div class="row justify-content-between">
-                      <div class="col-md-4">
+                      <!-- Debit Note No. -->
+                      <div class="col-x13-4 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <label
                                   for="inputPassword"
-                                  class="col-sm-7 col-form-label"
+                                  class="col-sm-7 col-x13-12 col-form-label"
                                 >
                                   Debit Note No.
                                 </label>
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <div class="col-sm-12">
@@ -900,7 +891,7 @@
                                     type="text"
                                     class="form-control"
                                     id="inputPassword"
-                                    placeholder="0"
+                                    placeholder=""
                                   />
                                 </div>
                               </div>
@@ -908,57 +899,68 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="col-md-4">
+                      <!-- Date -->
+                      <div class="col-x13-4 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-sm-6">
                             <form>
                               <div class="form-group row">
                                 <label
                                   for="inputPassword"
-                                  class="col-sm-7 col-form-label"
+                                  class="col-sm-12 col-form-label text-right label-left-xsm-68"
                                 >
                                   Date
                                 </label>
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-sm-6">
                             <form>
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text">
-                                    <i class="far fa-calendar-alt"></i>
-                                  </span>
+                              <div class="form-group">
+                                <div
+                                  class="input-group date"
+                                  id="vds_date"
+                                  data-target-input="nearest"
+                                >
+                                  <div
+                                    class="input-group-append"
+                                    data-target="#vds_date"
+                                    data-toggle="datetimepicker"
+                                  >
+                                    <div
+                                      style="border: none !important"
+                                      class="input-group-text"
+                                    >
+                                      <i class="fa fa-calendar"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    type="text"
+                                    class="form-control datetimepicker-input"
+                                    data-target="#vds_date"
+                                  />
                                 </div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  data-inputmask-alias="datetime"
-                                  data-inputmask-inputformat="dd/mm/yyyy"
-                                  data-mask
-                                />
                               </div>
                             </form>
                           </div>
                         </div>
                       </div>
-
-                      <div class="col-md-4">
+                      <!-- Issue Time -->
+                      <div class="col-x13-4 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <label
                                   for="inputPassword"
-                                  class="col-sm-7 col-form-label"
+                                  class="col-sm-7 col-xl-12 col-form-label text-right label-left-xsm-68"
                                 >
                                   Issue Time
                                 </label>
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group">
                                 <div
@@ -987,12 +989,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="row justify-content-between">
-                      <div class="col-md-8">
+                      <!-- Supplier -->
+                      <div class="col-x13-8 col-xl-6">
                         <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-6 col-md-6 col-lg-6">
                             <form>
                               <div class="form-group row">
                                 <label
@@ -1004,7 +1004,7 @@
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-9">
+                          <div class="col-6 col-md-6 col-lg-6">
                             <form>
                               <div class="form-group row">
                                 <div class="col-sm-12">
@@ -1012,7 +1012,7 @@
                                     type="text"
                                     class="form-control"
                                     id="inputPassword"
-                                    placeholder="0"
+                                    placeholder=""
                                   />
                                 </div>
                               </div>
@@ -1020,21 +1020,22 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <!-- BIN No. -->
+                      <div class="col-x13-4 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <label
                                   for="inputPassword"
-                                  class="col-sm-7 col-form-label"
+                                  class="col-sm-7 col-xl-12 col-form-label text-right label-left-xsm-68"
                                 >
                                   BIN No.
                                 </label>
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <div class="col-sm-12">
@@ -1042,7 +1043,7 @@
                                     type="text"
                                     class="form-control"
                                     id="inputPassword"
-                                    placeholder="0"
+                                    placeholder=""
                                   />
                                 </div>
                               </div>
@@ -1050,41 +1051,41 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-2">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Address
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-10">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-
-                    <div class="row justify-content-between">
-                      <div class="col-md-4">
+                      <!-- Address -->
+                      <div class="col-x13-12 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-x13-2">
+                            <form>
+                              <div class="form-group row">
+                                <label
+                                  for="inputPassword"
+                                  class="col-sm-7 col-xl-12 col-form-label"
+                                >
+                                  Address
+                                </label>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-x13-10">
+                            <form>
+                              <div class="form-group row">
+                                <div class="col-sm-12">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputPassword"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- GRN No. -->
+                      <div class="col-x13-4 col-xl-6">
+                        <div class="row">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <label
@@ -1096,7 +1097,7 @@
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6">
                             <form>
                               <div class="form-group row">
                                 <div class="col-sm-12">
@@ -1104,7 +1105,7 @@
                                     type="text"
                                     class="form-control"
                                     id="inputPassword"
-                                    placeholder="0"
+                                    placeholder=""
                                   />
                                 </div>
                               </div>
@@ -1112,22 +1113,22 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="col-md-4">
+                      <!-- Invoice/Challan No. -->
+                      <div class="col-x13-4 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6 col-lg-6 col-x13-7">
                             <form>
                               <div class="form-group row">
                                 <label
                                   for="inputPassword"
-                                  class="col-sm-7 col-form-label"
+                                  class="col-sm-7 col-md-12 col-xl-12 col-form-label text-right label-left-xsm-68"
                                 >
                                   Invoice/Challan No.
                                 </label>
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-md-6 col-lg-6 col-x13-5">
                             <form>
                               <div class="form-group row">
                                 <div class="col-sm-12">
@@ -1135,7 +1136,7 @@
                                     type="text"
                                     class="form-control"
                                     id="inputPassword"
-                                    placeholder="0"
+                                    placeholder=""
                                   />
                                 </div>
                               </div>
@@ -1143,106 +1144,123 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="col-md-4">
+                      <!-- Date -->
+                      <div class="col-x13-4 col-xl-6">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-6 col-sm-6">
                             <form>
                               <div class="form-group row">
                                 <label
                                   for="inputPassword"
-                                  class="col-sm-7 col-form-label"
+                                  class="col-sm-12 col-form-label text-right label-left-xsm-68"
                                 >
                                   Date
                                 </label>
                               </div>
                             </form>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6 col-sm-6">
                             <form>
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text">
-                                    <i class="far fa-calendar-alt"></i>
-                                  </span>
+                              <div class="form-group">
+                                <div
+                                  class="input-group date"
+                                  id="vds_date2"
+                                  data-target-input="nearest"
+                                >
+                                  <div
+                                    class="input-group-append"
+                                    data-target="#vds_date2"
+                                    data-toggle="datetimepicker"
+                                  >
+                                    <div
+                                      style="border: none !important"
+                                      class="input-group-text"
+                                    >
+                                      <i class="fa fa-calendar"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    type="text"
+                                    class="form-control datetimepicker-input"
+                                    data-target="#vds_date2"
+                                  />
                                 </div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  data-inputmask-alias="datetime"
-                                  data-inputmask-inputformat="dd/mm/yyyy"
-                                  data-mask
-                                />
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Vehicle Type & No -->
+                      <div class="col-x13-12 col-xl-6">
+                        <div class="row">
+                          <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-x13-3">
+                            <form>
+                              <div class="form-group row">
+                                <label
+                                  for="inputPassword"
+                                  class="col-sm-7 col-md-12 col-xl-12 col-form-label"
+                                >
+                                  Vehicle Type & No
+                                </label>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-x13-9">
+                            <form>
+                              <div class="form-group row">
+                                <div class="col-sm-12">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputPassword"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Reason -->
+                      <div class="col-x13-12 col-xl-6">
+                        <div class="row">
+                          <div class="col-6 col-lg-6 col-xl-6 col-x13-2">
+                            <form>
+                              <div class="form-group row">
+                                <label
+                                  for="inputPassword"
+                                  class="col-sm-7 col-form-label"
+                                >
+                                  Reason
+                                </label>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="col-6 col-lg-6 col-xl-6 col-x13-10">
+                            <form>
+                              <div class="form-group row">
+                                <div class="col-sm-12">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputPassword"
+                                    placeholder=""
+                                  />
+                                </div>
                               </div>
                             </form>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-2">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Vehicle Type & No
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-10">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-2">
-                        <form>
-                          <div class="form-group row">
-                            <label
-                              for="inputPassword"
-                              class="col-sm-7 col-form-label"
-                            >
-                              Reason
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="col-md-10">
-                        <form>
-                          <div class="form-group row">
-                            <div class="col-sm-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword"
-                                placeholder="0"
-                              />
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
                   </div>
                   <div
-                    class="col-md-2 d-flex flex-column align-middle justify-content-center"
+                    class="col-6 col-sm-4 col-md-3 col-xl-3 col-x13-2 d-flex flex-column align-middle justify-content-center"
                   >
                     <div>
                       <button
                         type="button"
-                        class="mb-3 btn btn-block btn-outline-secondary"
+                        class="mb-3 btn btn-block btn-success"
                       >
                         << Retrieve >>
                       </button>
@@ -1251,94 +1269,77 @@
                 </div>
               </div>
             </div>
+            <!-- Table List card -->
+            <div class="card pb-0">
+              <div class="card-body p-0">
+                <div style="overflow-x: auto">
+                  <table class="table table-bordered table-sm h6">
+                    <thead class="bg-success">
+                      <tr class="text-center">
+                        <th style="width: 5%">Item Code</th>
+                        <th style="width: 10%">Item Description</th>
+                        <th style="width: 10%">UOM</th>
+                        <th style="width: 10%">Qty</th>
+                        <th style="width: 10%">GRN Qty.</th>
+                        <th style="width: 10%">Rate</th>
+                        <th style="width: 10%">Total Amount</th>
+                        <th style="width: 10%">VAT</th>
+                        <th style="width: 5%">SD</th>
+                        <th style="width: 5%">Deduction</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
 
-            <!-- Product List card -->
-            <div class="card">
-              <div class="card-body">
-                <table class="table table-bordered h6">
-                  <thead class="bg-green">
-                    <tr>
-                      <th style="width: 5%;">Item Code</th>
-                      <th style="width: 10%;">Item Description</th>
-                      <th style="width: 10%;">UOM</th>
-                      <th style="width: 10%;">Qty</th>
-                      <th style="width: 10%;">GRN Qty.</th>
-                      <th style="width: 10%;">Rate</th>
-                      <th style="width: 10%;">Total Amount</th>
-                      <th style="width: 10%;">VAT</th>
-                      <th style="width: 5%;">SD</th>
-                      <th style="width: 5%;">Deduction</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                    </tr>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                    </tr>
-                  </tbody>
-                  <thead class="bg-green">
-                    <tr>
-                      <th style="width: 10%;"></th>
-                      <th style="width: 10%;"></th>
-                      <th style="width: 10%;"></th>
-                      <th style="width: 10%;"></th>
-                      <th style="width: 10%;"></th>
-                      <th style="width: 10%;">Total</th>
-                      <th style="width: 5%;"></th>
-                      <th style="width: 5%;"></th>
-                      <th style="width: 5%;"></th>
-                      <th style="width: 5%;"></th>
-                    </tr>
-                  </thead>
-                </table>
-                <div class="row mt-3">
-                  <div class="col-md-1">
+                        <td>00 Cr</td>
+
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+
+                        <td>00 Cr</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- buttons -->
+                <div class="row mt-2">
+                  <div class="col-md-2">
                     <button
                       type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
+                      class="btn btn-block btn-success mb-2"
                     >
                       Preview
                     </button>
                   </div>
-
-                  <div class="col-md-11">
-                    <div class="row justify-content-end">
-                      <div class="col-md-1">
-                        <button type="button" class="btn btn-block btn-primary">
-                          Get Pass
-                        </button>
-                      </div>
-                      <div class="col-md-1">
-                        <button type="button" class="btn btn-block btn-danger">
-                          Save & Post
-                        </button>
-                      </div>
-                      <div class="col-md-1">
-                        <button type="button" class="btn btn-block btn-success">
-                          Save
-                        </button>
-                      </div>
-                    </div>
+                  <div class="col-md-4"></div>
+                  <div class="col-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-success mb-2"
+                    >
+                      Preview
+                    </button>
+                  </div>
+                  <div class="col-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-success mb-2"
+                    >
+                      Preview
+                    </button>
+                  </div>
+                  <div class="col-md-2">
+                    <button type="button" class="btn btn-block btn-success">
+                      Preview
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1361,7 +1362,7 @@
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-      $.widget.bridge('uibutton', $.ui.button)
+      $.widget.bridge("uibutton", $.ui.button);
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1402,76 +1403,83 @@
         // });
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { placeholder: 'mm/dd/yyyy' })
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
         //Money Euro
-        $('[data-mask]').inputmask()
+        $("[data-mask]").inputmask();
 
         //Date range picker
-        $('#delivery_date').daterangepicker()
-        $('#received_date').daterangepicker()
-        $('#po_date').daterangepicker()
-        $('#lc_date').daterangepicker()
+        $("#delivery_date").daterangepicker();
+        $("#received_date").daterangepicker();
+        $("#po_date").daterangepicker();
+        $("#lc_date").daterangepicker();
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
+        $("#reservationtime").daterangepicker({
           timePicker: true,
           timePickerIncrement: 30,
           locale: {
-            format: 'MM/DD/YYYY hh:mm A',
+            format: "MM/DD/YYYY hh:mm A",
           },
-        })
+        });
         //Date range as a button
-        $('#daterange-btn').daterangepicker(
+        $("#daterange-btn").daterangepicker(
           {
             ranges: {
               Today: [moment(), moment()],
               Yesterday: [
-                moment().subtract(1, 'days'),
-                moment().subtract(1, 'days'),
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
               ],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [
-                moment().startOf('month'),
-                moment().endOf('month'),
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
               ],
-              'Last Month': [
-                moment().subtract(1, 'month').startOf('month'),
-                moment().subtract(1, 'month').endOf('month'),
+              "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month"),
               ],
             },
-            startDate: moment().subtract(29, 'days'),
+            startDate: moment().subtract(29, "days"),
             endDate: moment(),
           },
           function (start, end) {
-            $('#reportrange span').html(
-              start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'),
-            )
-          },
-        )
+            $("#reportrange span").html(
+              start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+          }
+        );
+
+        $("#vds_date").datetimepicker({
+          format: "L",
+        });
+        $("#vds_date2").datetimepicker({
+          format: "L",
+        });
 
         //Timepicker
-        $('#timepicker').datetimepicker({
-          format: 'LT',
-        })
+        $("#timepicker").datetimepicker({
+          format: "LT",
+        });
 
         //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
+        $(".duallistbox").bootstrapDualListbox();
 
         //Colorpicker
-        $('.my-colorpicker1').colorpicker()
+        $(".my-colorpicker1").colorpicker();
         //color picker with addon
-        $('.my-colorpicker2').colorpicker()
+        $(".my-colorpicker2").colorpicker();
 
-        $('.my-colorpicker2').on('colorpickerChange', function (event) {
-          $('.my-colorpicker2 .fa-square').css('color', event.color.toString())
-        })
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
 
-        $('input[data-bootstrap-switch]').each(function () {
-          $(this).bootstrapSwitch('state', $(this).prop('checked'))
-        })
-      })
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
+      });
     </script>
     <!-- InputMask -->
     <script src="../../plugins/moment/moment.min.js"></script>
