@@ -16,7 +16,7 @@ http://localhost:3000/Production-Receive.html
 http://localhost:3000/VAT-Source-informaion.html **
 http://localhost:3000/VDS-Received.html **
 http://localhost:3000/Credit-Transfer.html ** (resize form bank-name)
-http://localhost:3000/Installment-Recieve-Voucher.html
+http://localhost:3000/Installment-Recieve-Voucher.html **  (text-right-from-md)
 http://localhost:3000/Installment-Sales.html
 http://localhost:3000/Stock-Transfer.html
 http://localhost:3000/Shareholder-Setup.html
@@ -33,4 +33,3 @@ http://localhost:3000/Receivable-List.html
 http://localhost:3000/Sales-Order-List.html
 http://localhost:3000/Unapproved-Sales-Order-List.html
 http://localhost:3000/Transection-List-(Day-Book).html
-

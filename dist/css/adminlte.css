@@ -34280,4 +34280,10 @@ a.text-muted:hover {
     text-align: left !important;
   }
 }
+
+@media (min-width: 768px) {
+  .form-border-dark .label-right-from-md {
+    text-align: right !important;
+  }
+}
 /*# sourceMappingURL=adminlte.css.map */
