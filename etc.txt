@@ -1,3 +1,4 @@
+http://localhost:3000/Shareholder-Setup.html ** (borderless-table,floating-button,custom device to chrome, table-col)
 http://localhost:3000/batch-setup.html ** (style="border: none !important")
 http://localhost:3000/product-setup.html **
 http://localhost:3000/mushak-6.1.html **
@@ -19,7 +20,6 @@ http://localhost:3000/Credit-Transfer.html ** (resize form bank-name)
 http://localhost:3000/Installment-Recieve-Voucher.html **  (text-right-from-md)
 http://localhost:3000/Installment-Sales.html
 http://localhost:3000/Stock-Transfer.html
-http://localhost:3000/Shareholder-Setup.html
 http://localhost:3000/COA-setup-2.html
 http://localhost:3000/Customer-Information.html
 http://localhost:3000/Machine-Information.html
