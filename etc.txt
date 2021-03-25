@@ -12,8 +12,8 @@ http://localhost:3000/VAT-Source-informaion.html **
 http://localhost:3000/VDS-Received.html **
 http://localhost:3000/Credit-Transfer.html ** (resize form bank-name)
 http://localhost:3000/Installment-Recieve-Voucher.html ** (text-right-from-md)
-http://localhost:3000/COA-setup-2.html ** (search block)
-http://localhost:3000/Transection-List-(Day-Book).html
+http://localhost:3000/COA-setup-2.html ** 
+http://localhost:3000/Transection-List-(Day-Book).html ** (search block-label right)
 http://localhost:3000/Unapproved-Sales-Order-List.html
 http://localhost:3000/Sales-Order-List.html
 http://localhost:3000/Receivable-List.html
