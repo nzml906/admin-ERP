@@ -44,7 +44,7 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -224,7 +224,7 @@
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           />
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
@@ -872,9 +872,9 @@
                 </nav>
               </div>
             </div>
-            <!-- Search Unapprove Sales Order card -->
-            <div class="card card-danger">
-              <div class="card-header p-2">
+            <!-- Search card -->
+            <div class="card card-success pb-0">
+              <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Search Unapprove Sales Order
                 </h3>
@@ -890,23 +890,23 @@
                 </div>
               </div>
               <div class="card-body pb-0">
-                <div class="row justify-content-between">
+                <div class="row">
                   <!-- From -->
-                  <div class="col-md-2">
+                  <div class="col-6 col-md-4 col-xl-3 col-xxl-2 col-xxxxl-2">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-4 col-xxl-4 col-xxxl-4 col-xxxxl-4">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-12 col-form-label"
+                              class="col-12 col-form-label label-right-from-md"
                             >
                               From
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-8 col-xxl-8 col-xxxl-8 col-xxxxl-8">
                         <form>
                           <div class="form-group">
                             <div
@@ -919,7 +919,10 @@
                                 data-target="#sharepurchase"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
+                                <div
+                                  style="border: none !important"
+                                  class="input-group-text"
+                                >
                                   <i class="fa fa-calendar"></i>
                                 </div>
                               </div>
@@ -935,21 +938,21 @@
                     </div>
                   </div>
                   <!-- To -->
-                  <div class="col-md-2">
+                  <div class="col-6 col-md-4 col-xl-3 col-xxl-2 col-xxxxl-2">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-4 col-xxl-3 col-xxxl-3 col-xxxxl-4">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-12 col-form-label"
+                              class="col-12 col-form-label label-right-from-md"
                             >
                               To
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-8 col-xxl-9 col-xxxl-9 col-xxxxl-8">
                         <form>
                           <div class="form-group">
                             <div
@@ -962,7 +965,10 @@
                                 data-target="#sharepurchase2"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
+                                <div
+                                  style="border: none !important"
+                                  class="input-group-text"
+                                >
                                   <i class="fa fa-calendar"></i>
                                 </div>
                               </div>
@@ -978,29 +984,29 @@
                     </div>
                   </div>
                   <!-- Customer -->
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-4 col-xl-3 col-xxl-2 col-xxxxl-2">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-6 col-xxxxl-7 col-xxl-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-12 col-form-label"
+                              class="col-12 col-form-label label-right-from-md"
                             >
                               Customer
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-6 col-xxxxl-5 col-xxl-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
                               <select
                                 class="form-control select2"
-                                style="width: 100%;"
+                                style="width: 100%"
                               >
-                                <option selected="selected">Alabama</option>
+                                <option selected="selected">select one</option>
                                 <option>Alaska</option>
                                 <option>California</option>
                                 <option>Delaware</option>
@@ -1014,30 +1020,34 @@
                       </div>
                     </div>
                   </div>
-                  <!--Depo Name -->
-                  <div class="col-md-2">
+                  <!-- Depo Name -->
+                  <div class="col-6 col-md-4 col-xl-3 col-xxl-3 col-xxxxl-2">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div
+                        class="col-5 col-md-5 col-xl-6 col-xxxxl-7 col-xxl-6"
+                      >
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-12 col-form-label"
+                              class="col-12 col-form-label label-right-from-md"
                             >
                               Depo Name
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-8">
+                      <div
+                        class="col-7 col-md-7 col-xl-6 col-xxxxl-5 col-xxl-6"
+                      >
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
                               <select
                                 class="form-control select2"
-                                style="width: 100%;"
+                                style="width: 100%"
                               >
-                                <option selected="selected">Alabama</option>
+                                <option selected="selected">select one</option>
                                 <option>Alaska</option>
                                 <option>California</option>
                                 <option>Delaware</option>
@@ -1052,7 +1062,7 @@
                     </div>
                   </div>
                   <!-- Original Copy -->
-                  <div class="col-md-2">
+                  <div class="col-6 col-md-4 col-xl-3 col-xxl-1 col-xxxxl-2">
                     <form role="form">
                       <div class="card-body">
                         <div class="form-check">
@@ -1069,19 +1079,18 @@
                     </form>
                   </div>
                   <!-- Submit -->
-                  <div class="col-md-1">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
-                      Submit
-                    </button>
+                  <div class="col-6 col-md-4 col-xl-3 col-xxl-2 col-xxxxl-2">
+                    <div class="row justify-content-center">
+                      <button type="button" class="btn btn-success">
+                        Submit
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Unapprove Sales Order List card -->
-            <div class="card card-danger">
+            <div class="card card-success">
               <div class="card-header p-2">
                 <div class="row justify-content-center">
                   <h3 class="card-title h3 font-weight-bold">
@@ -1091,9 +1100,7 @@
               </div>
               <div class="card-body p-2">
                 <div class="row mb-5 justify-content-center">
-                  <h1 class="font-weight-bold">
-                    (P)
-                  </h1>
+                  <h1 class="font-weight-bold">(P)</h1>
                 </div>
                 <div class="row justify-content-center">
                   <h6 class="font-weight-bold border-bottom border-dark p-1">
@@ -1133,136 +1140,138 @@
                 </div>
               </div>
               <div class="card-body p-0">
-                <table class="table table-bordered table-sm h6">
-                  <thead class="bg-danger">
-                    <tr class="text-center">
-                      <th style="width: 5%;">SL</th>
-                      <th style="width: 5%;">Date</th>
-                      <th style="width: 10%;">Ref No.</th>
-                      <th style="width: 10%;">Party Details</th>
-                      <th style="width: 10%;">Order Qty</th>
-                      <th style="width: 10%;">Order Amount</th>
-                      <th style="width: 10%;">Delivery Amount</th>
-                      <th style="width: 5%;">Undelivered Amount</th>
-                      <th style="width: 5%;">Due Amount</th>
-                      <th style="width: 10%;">Option</th>
-                    </tr>
-                  </thead>
+                <div style="overflow-x: auto">
+                  <table class="table table-bordered table-sm h6">
+                    <thead class="bg-success">
+                      <tr class="text-center">
+                        <th style="width: 5%">SL</th>
+                        <th style="width: 5%">Date</th>
+                        <th style="width: 10%">Ref No.</th>
+                        <th style="width: 10%">Party Details</th>
+                        <th style="width: 10%">Order Qty</th>
+                        <th style="width: 10%">Order Amount</th>
+                        <th style="width: 10%">Delivery Amount</th>
+                        <th style="width: 5%">Undelivered Amount</th>
+                        <th style="width: 5%">Due Amount</th>
+                        <th style="width: 10%">Option</th>
+                      </tr>
+                    </thead>
 
-                  <tbody class="text-center">
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="pages/examples/invoice.html">OR9842</a>
-                      </td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Tomato;">
-                            <i class="fas fa-search"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Dodgerblue;">
-                            <i class="fas fa-cart-plus ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="pages/examples/invoice.html">OR9842</a>
-                      </td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Tomato;">
-                            <i class="fas fa-search"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Dodgerblue;">
-                            <i class="fas fa-cart-plus ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="pages/examples/invoice.html">OR9842</a>
-                      </td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Tomato;">
-                            <i class="fas fa-search"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Dodgerblue;">
-                            <i class="fas fa-cart-plus ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span
-                            style="font-size: 1.5em; color: Mediumslateblue;"
-                          >
-                            <i class="fas fa-edit ml-2"></i>
-                          </span>
-                        </a>
-                        <a href="">
-                          <span style="font-size: 1.5em; color: Red;">
-                            <i class="fas fa-trash-alt ml-2"></i>
-                          </span>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Tomato">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Dodgerblue">
+                              <i class="fas fa-cart-plus ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span
+                              style="font-size: 1.5em; color: Mediumslateblue"
+                            >
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Tomato">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Dodgerblue">
+                              <i class="fas fa-cart-plus ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span
+                              style="font-size: 1.5em; color: Mediumslateblue"
+                            >
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Tomato">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Dodgerblue">
+                              <i class="fas fa-cart-plus ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span
+                              style="font-size: 1.5em; color: Mediumslateblue"
+                            >
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.5em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -1278,7 +1287,7 @@
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-      $.widget.bridge('uibutton', $.ui.button)
+      $.widget.bridge("uibutton", $.ui.button);
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1311,112 +1320,112 @@
     <script>
       $(function () {
         $('input:radio[name="customRadioInline1"]').change(function () {
-          if ($(this).is(':checked') && $(this).val() == 'cash') {
-            $('#bankname').hide()
-            $('#chequeno').hide()
-            $('#accno').hide()
-            $('#issuedate').hide()
+          if ($(this).is(":checked") && $(this).val() == "cash") {
+            $("#bankname").hide();
+            $("#chequeno").hide();
+            $("#accno").hide();
+            $("#issuedate").hide();
           }
-          if ($(this).is(':checked') && $(this).val() == 'cheque') {
-            $('#bankname').show()
-            $('#branchname').show()
-            $('#chequeno').show()
-            $('#accno').show()
-            $('#issuedate').show()
+          if ($(this).is(":checked") && $(this).val() == "cheque") {
+            $("#bankname").show();
+            $("#branchname").show();
+            $("#chequeno").show();
+            $("#accno").show();
+            $("#issuedate").show();
           }
 
-          if ($(this).is(':checked') && $(this).val() == 'due') {
-            $('#bankname').hide()
-            $('#chequeno').hide()
-            $('#accno').hide()
-            $('#issuedate').hide()
+          if ($(this).is(":checked") && $(this).val() == "due") {
+            $("#bankname").hide();
+            $("#chequeno").hide();
+            $("#accno").hide();
+            $("#issuedate").hide();
           }
-        })
+        });
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { placeholder: 'mm/dd/yyyy' })
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
         //Money Euro
-        $('[data-mask]').inputmask()
+        $("[data-mask]").inputmask();
 
         //Date range picker
-        $('#reservation').daterangepicker()
-        $('#received_date').daterangepicker()
-        $('#po_date').daterangepicker()
-        $('#lc_date').daterangepicker()
+        $("#reservation").daterangepicker();
+        $("#received_date").daterangepicker();
+        $("#po_date").daterangepicker();
+        $("#lc_date").daterangepicker();
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
+        $("#reservationtime").daterangepicker({
           timePicker: true,
           timePickerIncrement: 30,
           locale: {
-            format: 'MM/DD/YYYY hh:mm A',
+            format: "MM/DD/YYYY hh:mm A",
           },
-        })
+        });
 
-        $('#reservationdate').datetimepicker({
-          format: 'L',
-        })
+        $("#reservationdate").datetimepicker({
+          format: "L",
+        });
 
-        $('#sharepurchase').datetimepicker({
-          format: 'L',
-        })
+        $("#sharepurchase").datetimepicker({
+          format: "L",
+        });
 
-        $('#sharepurchase2').datetimepicker({
-          format: 'L',
-        })
+        $("#sharepurchase2").datetimepicker({
+          format: "L",
+        });
 
         //Date range as a button
-        $('#daterange-btn').daterangepicker(
+        $("#daterange-btn").daterangepicker(
           {
             ranges: {
               Today: [moment(), moment()],
               Yesterday: [
-                moment().subtract(1, 'days'),
-                moment().subtract(1, 'days'),
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
               ],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [
-                moment().startOf('month'),
-                moment().endOf('month'),
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
               ],
-              'Last Month': [
-                moment().subtract(1, 'month').startOf('month'),
-                moment().subtract(1, 'month').endOf('month'),
+              "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month"),
               ],
             },
-            startDate: moment().subtract(29, 'days'),
+            startDate: moment().subtract(29, "days"),
             endDate: moment(),
           },
           function (start, end) {
-            $('#reportrange span').html(
-              start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'),
-            )
-          },
-        )
+            $("#reportrange span").html(
+              start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+          }
+        );
 
         //Timepicker
-        $('#timepicker').datetimepicker({
-          format: 'D',
-        })
+        $("#timepicker").datetimepicker({
+          format: "D",
+        });
 
         //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
+        $(".duallistbox").bootstrapDualListbox();
 
         //Colorpicker
-        $('.my-colorpicker1').colorpicker()
+        $(".my-colorpicker1").colorpicker();
         //color picker with addon
-        $('.my-colorpicker2').colorpicker()
+        $(".my-colorpicker2").colorpicker();
 
-        $('.my-colorpicker2').on('colorpickerChange', function (event) {
-          $('.my-colorpicker2 .fa-square').css('color', event.color.toString())
-        })
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
 
-        $('input[data-bootstrap-switch]').each(function () {
-          $(this).bootstrapSwitch('state', $(this).prop('checked'))
-        })
-      })
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
+      });
     </script>
     <!-- InputMask -->
     <script src="../../plugins/moment/moment.min.js"></script>
