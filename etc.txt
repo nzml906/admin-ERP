@@ -16,7 +16,7 @@ http://localhost:3000/COA-setup-2.html **  (table-responsive)
 http://localhost:3000/Transection-List-(Day-Book).html ** (search block-label right)
 http://localhost:3000/Unapproved-Sales-Order-List.html **
 http://localhost:3000/Sales-Order-List.html **
-http://localhost:3000/Receivable-List.html
+http://localhost:3000/Receivable-List.html **
 http://localhost:3000/Pending-aproval-online-voucher.html
 http://localhost:3000/Company-Information.html
 http://localhost:3000/Machineries&Spare-Parts-Issue.html
