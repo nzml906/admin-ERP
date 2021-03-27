@@ -18,7 +18,7 @@ http://localhost:3000/Unapproved-Sales-Order-List.html **
 http://localhost:3000/Sales-Order-List.html **
 http://localhost:3000/Receivable-List.html **
 http://localhost:3000/Pending-aproval-online-voucher.html ** (button 1 center)
-http://localhost:3000/Company-Information.html
+http://localhost:3000/Company-Information.html **
 http://localhost:3000/Machineries&Spare-Parts-Issue.html
 http://localhost:3000/Master-Initial-Setup.html
 http://localhost:3000/Opening-Stock-Mushak-6.1.html
