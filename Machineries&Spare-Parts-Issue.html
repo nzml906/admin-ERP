@@ -44,7 +44,7 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -224,7 +224,7 @@
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           />
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
@@ -831,7 +831,7 @@
         <section class="content">
           <div class="container-fluid">
             <!-- Machineries & Spare Parts Issue -->
-            <div class="card card-warning">
+            <div class="card card-success pb-0">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Machineries & Spare Parts Issue
@@ -845,51 +845,25 @@
                   >
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="remove"
-                  >
-                    <i class="fas fa-times"></i>
-                  </button>
                 </div>
               </div>
-
-              <div class="card-body">
+              <div class="card-body pb-0">
                 <div class="row justify-content-between">
-                  <div class="col-md-4">
-                    <button
-                      type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
-                    >
-                      Adjustment No Search
-                    </button>
-                  </div>
-                  <div class="col-md-4">
-                    <button
-                      type="button"
-                      class="mb-3 btn btn-block btn-outline-secondary"
-                    >
-                      Date Search
-                    </button>
-                  </div>
-                </div>
-                <div class="row justify-content-between">
-                  <div class="col-md-4">
+                  <div class="col-md-5 col-xl-4">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-6 col-md-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-12 col-form-label"
                             >
                               Adjustment No
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-6 col-md-6">
                         <form>
                           <div class="form-group row">
                             <div class="col-sm-12">
@@ -897,7 +871,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -905,35 +879,46 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-5 col-xl-4">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <form>
                           <div class="form-group row">
                             <label
                               for="inputPassword"
-                              class="col-sm-7 col-form-label"
+                              class="col-12 col-form-label"
                             >
-                              Date
+                              From
                             </label>
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-6">
                         <form>
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="far fa-calendar-alt"></i>
-                              </span>
+                          <div class="form-group">
+                            <div
+                              class="input-group date"
+                              id="sharepurchase"
+                              data-target-input="nearest"
+                            >
+                              <div
+                                class="input-group-append"
+                                data-target="#sharepurchase"
+                                data-toggle="datetimepicker"
+                              >
+                                <div
+                                  style="border: none !important"
+                                  class="input-group-text"
+                                >
+                                  <i class="fa fa-calendar"></i>
+                                </div>
+                              </div>
+                              <input
+                                type="text"
+                                class="form-control datetimepicker-input"
+                                data-target="#sharepurchase"
+                              />
                             </div>
-                            <input
-                              type="text"
-                              class="form-control"
-                              data-inputmask-alias="datetime"
-                              data-inputmask-inputformat="dd/mm/yyyy"
-                              data-mask
-                            />
                           </div>
                         </form>
                       </div>
@@ -941,7 +926,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-1">
+                  <div class="col-6 col-xl-2">
                     <form>
                       <div class="form-group row">
                         <label
@@ -953,7 +938,7 @@
                       </div>
                     </form>
                   </div>
-                  <div class="col-md-11">
+                  <div class="col-6 col-xl-10">
                     <form>
                       <div class="form-group row">
                         <div class="col-sm-12">
@@ -961,7 +946,7 @@
                             type="text"
                             class="form-control"
                             id="inputPassword"
-                            placeholder="0"
+                            placeholder=""
                           />
                         </div>
                       </div>
@@ -970,110 +955,132 @@
                 </div>
               </div>
             </div>
-
-            <!-- Product List card -->
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-11">
-                    <table class="table table-bordered h6">
-                      <thead class="bg-secondary">
-                        <tr>
-                          <th style="width: 5%;">Item Code</th>
-                          <th style="width: 10%;">Item Description</th>
-                          <th style="width: 10%;">UOM</th>
-                          <th style="width: 10%;">Qty</th>
-                          <th style="width: 10%;">Balance</th>
-                          <th style="width: 10%;">Rate</th>
-                          <th style="width: 10%;">Total Amount</th>
-                          <th style="width: 10%;">VAT</th>
-                          <th style="width: 5%;">Current Rate</th>
-                          <th style="width: 5%;">Current Amount</th>
-                          <th style="width: 5%;">Disposal Cause</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                        </tr>
-                        <tr>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                          <td>00 Cr</td>
-                        </tr>
-                      </tbody>
-                      <thead class="bg-secondary">
-                        <tr>
-                          <th style="width: 5%;"></th>
-                          <th style="width: 10%;"></th>
-                          <th style="width: 10%;"></th>
-                          <th style="width: 10%;"></th>
-                          <th style="width: 10%;"></th>
-                          <th style="width: 10%;">Total</th>
-                          <th style="width: 10%;"></th>
-                          <th style="width: 10%;"></th>
-                          <th style="width: 5%;"></th>
-                          <th style="width: 5%;"></th>
-                          <th style="width: 5%;"></th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-
-                  <div
-                    class="col-md-1 d-flex flex-column align-middle justify-content-center"
-                  >
-                    <div>
-                      <button
-                        type="button"
-                        class="mb-3 btn btn-block btn-outline-secondary"
+            <!-- Voucher list -->
+            <div class="row justify-content-center">
+              <div class="col-xl-11">
+                <div class="card">
+                  <div class="card-body p-0">
+                    <div style="overflow-x: auto">
+                      <table
+                        class="table table-responsive-xxxxl-xxxl table-bordered table h6"
                       >
-                        ADD
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                        <thead class="bg-success">
+                          <tr class="text-center">
+                            <th>Item Code</th>
+                            <th>Item Description</th>
+                            <th>UOM</th>
+                            <th>Qty</th>
+                            <th>Balance</th>
+                            <th>Rate</th>
+                            <th>Total Amount</th>
+                            <th>VAT</th>
+                            <th>Current Rate</th>
+                            <th>Current Amount</th>
+                            <th>Disposal Cause</th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-center">
+                          <tr>
+                            <td>00 Cr</td>
+                            <td>
+                              <a href="pages/examples/invoice.html">OR9842</a>
+                            </td>
 
-                <div class="row mt-3">
-                  <div class="col-md-11">
-                    <div class="row justify-content-end">
-                      <div class="col-md-1">
-                        <button type="button" class="btn btn-block btn-primary">
-                          Get Pass
-                        </button>
-                      </div>
-                      <div class="col-md-1">
-                        <button type="button" class="btn btn-block btn-danger">
-                          Save & Post
-                        </button>
-                      </div>
-                      <div class="col-md-1">
-                        <button type="button" class="btn btn-block btn-success">
-                          Save
-                        </button>
-                      </div>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                          </tr>
+                          <tr>
+                            <td>00 Cr</td>
+                            <td>
+                              <a href="pages/examples/invoice.html">OR9842</a>
+                            </td>
+
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                          </tr>
+                          <tr>
+                            <td>00 Cr</td>
+                            <td>
+                              <a href="pages/examples/invoice.html">OR9842</a>
+                            </td>
+
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                          </tr>
+                          <tr>
+                            <td>00 Cr</td>
+                            <td>
+                              <a href="pages/examples/invoice.html">OR9842</a>
+                            </td>
+
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                          </tr>
+                          <tr>
+                            <td>00 Cr</td>
+                            <td>
+                              <a href="pages/examples/invoice.html">OR9842</a>
+                            </td>
+
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                            <td>00 Cr</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
+              <div
+                class="col-6 col-xl-1 d-flex flex-column align-middle justify-content-center"
+              >
+                <button type="button" class="btn btn-success">Add</button>
+              </div>
+            </div>
+            <!-- BUTTONS--------- -->
+            <div class="row mt-4 justify-content-end">
+              <button type="button" class="btn btn-primary">Get Pass</button>
+              <button type="button" class="ml-3 btn btn-danger">
+                Save & Post
+              </button>
+              <button type="button" class="ml-3 mr-2 btn btn-success">
+                Save
+              </button>
             </div>
           </div>
         </section>
@@ -1093,7 +1100,7 @@
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-      $.widget.bridge('uibutton', $.ui.button)
+      $.widget.bridge("uibutton", $.ui.button);
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1134,76 +1141,79 @@
         // });
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { placeholder: 'mm/dd/yyyy' })
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
         //Money Euro
-        $('[data-mask]').inputmask()
+        $("[data-mask]").inputmask();
 
         //Date range picker
-        $('#delivery_date').daterangepicker()
-        $('#received_date').daterangepicker()
-        $('#po_date').daterangepicker()
-        $('#lc_date').daterangepicker()
+        $("#delivery_date").daterangepicker();
+        $("#received_date").daterangepicker();
+        $("#po_date").daterangepicker();
+        $("#lc_date").daterangepicker();
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
+        $("#reservationtime").daterangepicker({
           timePicker: true,
           timePickerIncrement: 30,
           locale: {
-            format: 'MM/DD/YYYY hh:mm A',
+            format: "MM/DD/YYYY hh:mm A",
           },
-        })
+        });
         //Date range as a button
-        $('#daterange-btn').daterangepicker(
+        $("#daterange-btn").daterangepicker(
           {
             ranges: {
               Today: [moment(), moment()],
               Yesterday: [
-                moment().subtract(1, 'days'),
-                moment().subtract(1, 'days'),
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
               ],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [
-                moment().startOf('month'),
-                moment().endOf('month'),
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
               ],
-              'Last Month': [
-                moment().subtract(1, 'month').startOf('month'),
-                moment().subtract(1, 'month').endOf('month'),
+              "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month"),
               ],
             },
-            startDate: moment().subtract(29, 'days'),
+            startDate: moment().subtract(29, "days"),
             endDate: moment(),
           },
           function (start, end) {
-            $('#reportrange span').html(
-              start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'),
-            )
-          },
-        )
+            $("#reportrange span").html(
+              start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+          }
+        );
 
         //Timepicker
-        $('#timepicker').datetimepicker({
-          format: 'LT',
-        })
+        $("#timepicker").datetimepicker({
+          format: "LT",
+        });
+        $("#sharepurchase").datetimepicker({
+          format: "L",
+        });
 
         //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
+        $(".duallistbox").bootstrapDualListbox();
 
         //Colorpicker
-        $('.my-colorpicker1').colorpicker()
+        $(".my-colorpicker1").colorpicker();
         //color picker with addon
-        $('.my-colorpicker2').colorpicker()
+        $(".my-colorpicker2").colorpicker();
 
-        $('.my-colorpicker2').on('colorpickerChange', function (event) {
-          $('.my-colorpicker2 .fa-square').css('color', event.color.toString())
-        })
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
 
-        $('input[data-bootstrap-switch]').each(function () {
-          $(this).bootstrapSwitch('state', $(this).prop('checked'))
-        })
-      })
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
+      });
     </script>
     <!-- InputMask -->
     <script src="../../plugins/moment/moment.min.js"></script>
