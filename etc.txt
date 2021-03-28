@@ -24,7 +24,7 @@ http://localhost:3000/Master-Initial-Setup.html ** (table data form)
 http://localhost:3000/Opening-Stock-Mushak-6.1.html **
 http://localhost:3000/Production-Receive.html **
 http://localhost:3000/Installment-Sales.html *
-http://localhost:3000/Stock-Transfer.html
+http://localhost:3000/Stock-Transfer.html *
 http://localhost:3000/Customer-Information.html
 http://localhost:3000/Machine-Information.html
 http://localhost:3000/PhysicalVerification.html
