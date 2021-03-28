@@ -27,7 +27,7 @@ http://localhost:3000/Installment-Sales.html *
 http://localhost:3000/Stock-Transfer.html *
 http://localhost:3000/Customer-Information.html * (card stack)
 http://localhost:3000/Machine-Information.html *
-http://localhost:3000/PhysicalVerification.html
+http://localhost:3000/PhysicalVerification.html *
 http://localhost:3000/Supplier-Setup.html
 http://localhost:3000/Cash-Book.html
 http://localhost:3000/Income-Statement.html

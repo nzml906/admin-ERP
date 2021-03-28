@@ -44,7 +44,7 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+    <div class="wrapper form-border-dark">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -224,7 +224,7 @@
             src="dist/img/AdminLTELogo.png"
             alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           />
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
@@ -873,7 +873,7 @@
               </div>
             </div>
             <!-- Product Physical Verification card -->
-            <div class="card card-teal">
+            <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title h3 font-weight-bold">
                   Product Physical Verification
@@ -913,7 +913,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -943,7 +943,7 @@
                               <div class="form-group">
                                 <select
                                   class="form-control select2"
-                                  style="width: 100%;"
+                                  style="width: 100%"
                                 >
                                   <option selected="selected">Alabama</option>
                                   <option>Alaska</option>
@@ -961,7 +961,7 @@
                               <div class="form-group">
                                 <select
                                   class="form-control select2"
-                                  style="width: 100%;"
+                                  style="width: 100%"
                                 >
                                   <option selected="selected">Alabama</option>
                                   <option>Alaska</option>
@@ -1001,7 +1001,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1032,7 +1032,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1063,7 +1063,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1094,7 +1094,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1125,7 +1125,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1156,7 +1156,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1187,7 +1187,7 @@
                                 type="text"
                                 class="form-control"
                                 id="inputPassword"
-                                placeholder="0"
+                                placeholder=""
                               />
                             </div>
                           </div>
@@ -1223,7 +1223,10 @@
                                 data-target="#sharepurchase"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
+                                <div
+                                  style="border: none !important"
+                                  class="input-group-text"
+                                >
                                   <i class="fa fa-calendar"></i>
                                 </div>
                               </div>
@@ -1241,22 +1244,10 @@
                 </div>
                 <!-- BUTTONS--------- -->
                 <div class="row mt-3 justify-content-center">
-                  <div class="col-md-1">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
-                      Save
-                    </button>
-                  </div>
-                  <div class="col-md-1">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-danger"
-                    >
-                      Reset
-                    </button>
-                  </div>
+                  <button type="button" class="btn btn-primary">Save</button>
+                  <button type="button" class="ml-3 btn btn-danger">
+                    Reset
+                  </button>
                 </div>
               </div>
             </div>
@@ -1298,17 +1289,14 @@
 
                   <!-- Submit -->
                   <div class="col-md-1">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-outline-secondary"
-                    >
+                    <button type="button" class="btn btn-success">
                       Submit
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Product list table -->
+            <!-- Customer list -->
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
@@ -1339,58 +1327,57 @@
                 </div>
               </div>
               <div class="card-body p-0">
-                <table class="table table-bordered h6">
-                  <thead class="bg-teal">
-                    <tr>
-                      <th style="width: 3%;">SL</th>
-                      <th style="width: 7%;">Product ID</th>
-                      <th style="width: 20%;">Product Name</th>
-                      <th style="width: 10%;">OP Qty</th>
-                      <th style="width: 20%;">OP Rate</th>
-                      <th style="width: 10%;">Inwards</th>
-                      <th style="width: 20%;">
-                        Outwards
-                      </th>
-                      <th style="width: 20%;">
-                        Outwards Rate
-                      </th>
-                      <th style="width: 20%;">Verify Qty</th>
-                      <th style="width: 10%;">Verify Date</th>
-                      <th style="width: 5%;">Action</th>
-                      <th style="width: 5%;">Delete</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>00 Cr</td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-outline-secondary btn-sm"
-                        >
-                          Edit
-                        </button>
-                      </td>
-                      <td>
-                        <button
-                          type="button"
-                          class="btn btn-block btn-outline-secondary btn-sm"
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div style="overflow-x: auto">
+                  <table
+                    class="table table-responsive-xxxxl-xxxl table-bordered table h6"
+                  >
+                    <thead class="bg-success">
+                      <tr class="text-center">
+                        <th>SL</th>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>OP Qty</th>
+                        <th>OP Rate</th>
+                        <th>Inwards</th>
+                        <th>Outwards</th>
+                        <th>Outwards Rate</th>
+                        <th>Verify Qty</th>
+                        <th>Verify Date</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center">
+                      <tr>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="pages/examples/invoice.html">OR9842</a>
+                        </td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>00 Cr</td>
+                        <td>
+                          <a href="">
+                            <span
+                              style="font-size: 1.2em; color: Mediumslateblue"
+                            >
+                              <i class="fas fa-edit ml-2"></i>
+                            </span>
+                          </a>
+                          <a href="">
+                            <span style="font-size: 1.2em; color: Red">
+                              <i class="fas fa-trash-alt ml-2"></i>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -1406,7 +1393,7 @@
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-      $.widget.bridge('uibutton', $.ui.button)
+      $.widget.bridge("uibutton", $.ui.button);
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1439,111 +1426,111 @@
     <script>
       $(function () {
         $('input:radio[name="customRadioInline1"]').change(function () {
-          if ($(this).is(':checked') && $(this).val() == 'cash') {
-            $('#bankname').hide()
-            $('#chequeno').hide()
-            $('#accno').hide()
-            $('#issuedate').hide()
+          if ($(this).is(":checked") && $(this).val() == "cash") {
+            $("#bankname").hide();
+            $("#chequeno").hide();
+            $("#accno").hide();
+            $("#issuedate").hide();
           }
-          if ($(this).is(':checked') && $(this).val() == 'cheque') {
-            $('#bankname').show()
-            $('#chequeno').show()
-            $('#accno').show()
-            $('#issuedate').show()
+          if ($(this).is(":checked") && $(this).val() == "cheque") {
+            $("#bankname").show();
+            $("#chequeno").show();
+            $("#accno").show();
+            $("#issuedate").show();
           }
 
-          if ($(this).is(':checked') && $(this).val() == 'due') {
-            $('#bankname').hide()
-            $('#chequeno').hide()
-            $('#accno').hide()
-            $('#issuedate').hide()
+          if ($(this).is(":checked") && $(this).val() == "due") {
+            $("#bankname").hide();
+            $("#chequeno").hide();
+            $("#accno").hide();
+            $("#issuedate").hide();
           }
-        })
+        });
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { placeholder: 'dd/mm/yyyy' })
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { placeholder: 'mm/dd/yyyy' })
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
         //Money Euro
-        $('[data-mask]').inputmask()
+        $("[data-mask]").inputmask();
 
         //Date range picker
-        $('#reservation').daterangepicker()
-        $('#received_date').daterangepicker()
-        $('#po_date').daterangepicker()
-        $('#lc_date').daterangepicker()
+        $("#reservation").daterangepicker();
+        $("#received_date").daterangepicker();
+        $("#po_date").daterangepicker();
+        $("#lc_date").daterangepicker();
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
+        $("#reservationtime").daterangepicker({
           timePicker: true,
           timePickerIncrement: 30,
           locale: {
-            format: 'MM/DD/YYYY hh:mm A',
+            format: "MM/DD/YYYY hh:mm A",
           },
-        })
+        });
 
-        $('#salesdate').datetimepicker({
-          format: 'L',
-        })
+        $("#salesdate").datetimepicker({
+          format: "L",
+        });
 
-        $('#sharepurchase').datetimepicker({
-          format: 'L',
-        })
+        $("#sharepurchase").datetimepicker({
+          format: "L",
+        });
 
-        $('#birthdate').datetimepicker({
-          format: 'L',
-        })
+        $("#birthdate").datetimepicker({
+          format: "L",
+        });
 
         //Date range as a button
-        $('#daterange-btn').daterangepicker(
+        $("#daterange-btn").daterangepicker(
           {
             ranges: {
               Today: [moment(), moment()],
               Yesterday: [
-                moment().subtract(1, 'days'),
-                moment().subtract(1, 'days'),
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
               ],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [
-                moment().startOf('month'),
-                moment().endOf('month'),
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
               ],
-              'Last Month': [
-                moment().subtract(1, 'month').startOf('month'),
-                moment().subtract(1, 'month').endOf('month'),
+              "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month"),
               ],
             },
-            startDate: moment().subtract(29, 'days'),
+            startDate: moment().subtract(29, "days"),
             endDate: moment(),
           },
           function (start, end) {
-            $('#reportrange span').html(
-              start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'),
-            )
-          },
-        )
+            $("#reportrange span").html(
+              start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY")
+            );
+          }
+        );
 
         //Timepicker
-        $('#timepicker').datetimepicker({
-          format: 'D',
-        })
+        $("#timepicker").datetimepicker({
+          format: "D",
+        });
 
         //Bootstrap Duallistbox
-        $('.duallistbox').bootstrapDualListbox()
+        $(".duallistbox").bootstrapDualListbox();
 
         //Colorpicker
-        $('.my-colorpicker1').colorpicker()
+        $(".my-colorpicker1").colorpicker();
         //color picker with addon
-        $('.my-colorpicker2').colorpicker()
+        $(".my-colorpicker2").colorpicker();
 
-        $('.my-colorpicker2').on('colorpickerChange', function (event) {
-          $('.my-colorpicker2 .fa-square').css('color', event.color.toString())
-        })
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
 
-        $('input[data-bootstrap-switch]').each(function () {
-          $(this).bootstrapSwitch('state', $(this).prop('checked'))
-        })
-      })
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
+      });
     </script>
     <!-- InputMask -->
     <script src="../../plugins/moment/moment.min.js"></script>
