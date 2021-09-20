@@ -1,37 +1,34 @@
 {
-  "_args": [
-    [
-      "@sweetalert2/theme-bootstrap-4@3.1.4",
-      "C:\\Users\\nazmul\\Desktop\\vat-ui"
-    ]
-  ],
-  "_from": "@sweetalert2/theme-bootstrap-4@3.1.4",
-  "_id": "@sweetalert2/theme-bootstrap-4@3.1.4",
+  "_from": "@sweetalert2/theme-bootstrap-4@^3.1.4",
+  "_id": "@sweetalert2/theme-bootstrap-4@3.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-F9ltvRbEP3CNyLCW3p0vmrDOOqZgSUvK5mLIQso7bJ/JnbVdVLiZ6GRnzdhzf5Rz6LO0U9YS++RWdpN+32UHjw==",
+  "_integrity": "sha512-hNt+KMN84FLeL+AomgiCnsuBViFnVamq8ABwn2Y/EvLBQKPRvRQuYtoX+Ub6B6R3brdh6ylPpDwnUGC1xyhi9A==",
   "_location": "/@sweetalert2/theme-bootstrap-4",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "@sweetalert2/theme-bootstrap-4@3.1.4",
+    "raw": "@sweetalert2/theme-bootstrap-4@^3.1.4",
     "name": "@sweetalert2/theme-bootstrap-4",
     "escapedName": "@sweetalert2%2ftheme-bootstrap-4",
     "scope": "@sweetalert2",
-    "rawSpec": "3.1.4",
+    "rawSpec": "^3.1.4",
     "saveSpec": null,
-    "fetchSpec": "3.1.4"
+    "fetchSpec": "^3.1.4"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@sweetalert2/theme-bootstrap-4/-/theme-bootstrap-4-3.1.4.tgz",
-  "_spec": "3.1.4",
-  "_where": "C:\\Users\\nazmul\\Desktop\\vat-ui",
+  "_resolved": "https://registry.npmjs.org/@sweetalert2/theme-bootstrap-4/-/theme-bootstrap-4-3.2.0.tgz",
+  "_shasum": "9580fcefd7c624863e5a7cd35cb6b253e0ac8592",
+  "_spec": "@sweetalert2/theme-bootstrap-4@^3.1.4",
+  "_where": "C:\\Users\\nz777\\Desktop\\admin-ERP",
   "author": "",
   "bugs": {
     "url": "https://github.com/sweetalert2/sweetalert2-themes/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Bootstrap 4 theme for SweetAlert2",
   "files": [
     "*.css",
@@ -53,5 +50,5 @@
     "type": "git",
     "url": "git+https://github.com/sweetalert2/sweetalert2-themes.git"
   },
-  "version": "3.1.4"
+  "version": "3.2.0"
 }
