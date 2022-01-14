@@ -1,13 +1,13 @@
 /*!
  * AdminLTE v3.0.4 (https://adminlte.io)
- * Copyright 2014-2021 Colorlib <http://colorlib.com>
+ * Copyright 2014-2022 Colorlib <http://colorlib.com>
  * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.adminlte = {}));
-}(this, (function (exports) { 'use strict';
+})(this, (function (exports) { 'use strict';
 
   /**
    * --------------------------------------------
@@ -1818,5 +1818,5 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+}));
 //# sourceMappingURL=adminlte.js.map
