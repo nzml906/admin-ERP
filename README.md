@@ -12,7 +12,7 @@ yarn
 yarn dev
 ```
 
-- http://localhost:3000/Shareholder-Setup.html ** (borderless-table,floating-button,custom device to chrome, table-col)
+- http://localhost:3000/index.html *** (borderless-table,floating-button,custom device to chrome, table-col)
 - http://localhost:3000/batch-setup.html ** (style="border: none !important")
 - http://localhost:3000/product-setup.html **
 - http://localhost:3000/mushak-6.1.html **
